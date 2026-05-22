@@ -1,0 +1,11 @@
+Installers/
+*.exe
+*.msi
+*.dll
+*.iso
+*.ova
+*.vdi
+*.vmdk
+*.zip
+*.7z
+*.rar
