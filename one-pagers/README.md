@@ -1,12 +1,60 @@
-# One-Pagers
+# \# One-Pagers
 
-This folder will contain concise, step-by-step documents for each lab.
-Each one-pager is written so a reviewer can follow the workflow and reproduce it.
+# 
 
-Planned files:
+# This folder contains concise project summaries and workflow guides for completed portfolio labs.
 
-AD_Domain_Setup_One_Pager.docx
-Client_Domain_Join_One_Pager.docx
-OU_Structure_One_Pager.docx
-User_Lifecycle_One_Pager.docx
-GPO_Basics_One_Pager.docx
+# 
+
+# Each one-pager is designed to provide a quick-reference overview of a project, including the major objectives, key steps performed, validation activities, and skills demonstrated.
+
+# 
+
+# The goal is to allow a reviewer to quickly understand the purpose of a project without reading the full documentation.
+
+# 
+
+# \## Current One-Pagers
+
+# 
+
+# \* AD DS Installation
+
+# \* Domain Promotion
+
+# \* Organizational Unit Structure
+
+# \* User Management
+
+# \* Group Policy Basics
+
+# \* Proof and Validation
+
+# 
+
+# \## Purpose
+
+# 
+
+# One-pagers serve as:
+
+# 
+
+# \* Executive summaries for completed labs
+
+# \* Quick-reference study guides
+
+# \* Interview preparation resources
+
+# \* Documentation that supports the full project files
+
+# 
+
+# Reviewers can use the one-pagers to quickly understand the workflow, technical concepts, and outcomes associated with each project.
+
+# 
+
+# As additional projects are completed, corresponding one-pagers will be added to this folder.
+
+# 
+

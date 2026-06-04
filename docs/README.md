@@ -1,11 +1,62 @@
-# Documentation (docs)
+# \# Documentation (docs)
 
-This folder contains the written workflows for each lab.
+# 
 
-## Structure
-**/one-pagers**: Step-by-step “how I did it” documents used to reproduce the lab.
+# This folder contains supporting documentation used throughout the Enterprise Systems Support Portfolio.
 
-**/templates**: Reusable templates (ticket notes, validation checklists, etc.).
+# 
 
-## What to Expect
-Each lab will have a matching one-pager and a matching screenshot folder.
+# Contents include:
+
+# 
+
+# \* One-pager standards
+
+# \* Reusable templates
+
+# \* Documentation formats
+
+# \* Validation checklists
+
+# \* Portfolio support resources
+
+# 
+
+# \## Structure
+
+# 
+
+# \*\*templates/\*\* – Reusable templates such as ticket notes, validation checklists, and documentation formats.
+
+# 
+
+# \*\*templates.md\*\* – Reference guide describing available templates and their intended use.
+
+# 
+
+# \## Purpose
+
+# 
+
+# The goal of this folder is to maintain consistent documentation standards across all projects in the portfolio.
+
+# 
+
+# Each completed lab should contain:
+
+# 
+
+# \* Technical documentation
+
+# \* Supporting screenshots
+
+# \* Validation evidence
+
+# \* Research notes (when applicable)
+
+# 
+
+# Consistent documentation helps demonstrate both technical execution and professional communication skills.
+
+
+
