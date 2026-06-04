@@ -1,296 +1,294 @@
-# \# Enterprise Systems Support Portfolio
+\# Enterprise Systems Support Portfolio
 
-# 
 
-# \## Overview
 
-# 
+\## Overview
 
-# This repository documents my hands-on journey building practical enterprise IT support, systems administration, and troubleshooting skills.
 
-# 
 
-# The portfolio focuses on real-world scenarios involving Active Directory, Windows administration, endpoint support, ticketing systems, operating system deployment, troubleshooting, and incident response.
+This repository documents my hands-on journey building practical enterprise IT support, systems administration, and troubleshooting skills.
 
-# 
 
-# All projects are documented with screenshots, technical notes, research, and validation evidence.
 
-# 
+The portfolio focuses on real-world scenarios involving Active Directory, Windows administration, endpoint support, ticketing systems, operating system deployment, troubleshooting, and incident response.
 
-# \---
 
-# 
 
-# \# Foundation Projects
+All projects are documented with screenshots, technical notes, research, and validation evidence.
 
-# 
 
-# \## Enterprise VM Buildout
 
-# 
+\---
 
-# Build and configure a Windows enterprise lab environment using VirtualBox.
 
-# 
 
-# Skills Demonstrated:
+\# Foundation Projects
 
-# 
 
-# \- Virtual Machine Configuration
 
-# \- Windows Deployment
+\## Enterprise VM Buildout
 
-# \- Networking Fundamentals
 
-# \- Snapshot Management
 
-# \- System Preparation
+Build and configure a Windows enterprise lab environment using VirtualBox.
 
-# \- Lab Architecture
 
-# 
 
-# \---
+Skills Demonstrated:
 
-# 
 
-# \# Completed Labs
 
-# 
+\- Virtual Machine Configuration
 
-# \## LAB01 – Active Directory Administration
+\- Windows Deployment
 
-# 
+\- Networking Fundamentals
 
-# Topics:
+\- Snapshot Management
 
-# 
+\- System Preparation
 
-# \- AD DS Installation
+\- Lab Architecture
 
-# \- Domain Promotion
 
-# \- Organizational Units
 
-# \- User Management
+\---
 
-# \- Group Policy
 
-# \- Access Validation
 
-# 
+\# Completed Labs
 
-# Skills:
 
-# 
 
-# \- Active Directory Administration
+\## LAB01 – Active Directory Administration
 
-# \- Group Policy Management
 
-# \- Identity Management
 
-# \- NTFS Permissions
+Topics:
 
-# 
 
-# \---
 
-# 
+\- AD DS Installation
 
-# \## LAB02 – Software Installation Failure
+\- Domain Promotion
 
-# 
+\- Organizational Units
 
-# Topics:
+\- User Management
 
-# 
+\- Group Policy
 
-# \- Software Deployment
+\- Access Validation
 
-# \- Installer Troubleshooting
 
-# \- Log Review
 
-# \- Ticket Documentation
+Skills:
 
-# \- Root Cause Analysis
 
-# 
 
-# Skills:
+\- Active Directory Administration
 
-# 
+\- Group Policy Management
 
-# \- Desktop Support
+\- Identity Management
 
-# \- Software Troubleshooting
+\- NTFS Permissions
 
-# \- Incident Documentation
 
-# 
 
-# \---
+\---
 
-# 
 
-# \## LAB03 – Secure Boot \& BitLocker Incident Response
 
-# 
+\## LAB02 – Software Installation Failure
 
-# Topics:
 
-# 
 
-# \- Secure Boot Validation
+Topics:
 
-# \- TPM Verification
 
-# \- BitLocker Recovery
 
-# \- SFC Validation
+\- Software Deployment
 
-# \- DISM Validation
+\- Installer Troubleshooting
 
-# 
+\- Log Review
 
-# Skills:
+\- Ticket Documentation
 
-# 
+\- Root Cause Analysis
 
-# \- Windows Security
 
-# \- Endpoint Recovery
 
-# \- Incident Response
+Skills:
 
-# \- Root Cause Analysis
 
-# 
 
-# \---
+\- Desktop Support
 
-# 
+\- Software Troubleshooting
 
-# \# Help Desk Labs
+\- Incident Documentation
 
-# 
 
-# \## osTicket Learning Path
 
-# 
+\---
 
-# Topics:
 
-# 
 
-# \- LAMP Stack Deployment
+\## LAB03 – Secure Boot \& BitLocker Incident Response
 
-# \- osTicket Installation
 
-# \- Help Desk Configuration
 
-# \- Ticket Workflows
+Topics:
 
-# \- User Support Scenarios
 
-# 
 
-# Skills:
+\- Secure Boot Validation
 
-# 
+\- TPM Verification
 
-# \- Ticketing Systems
+\- BitLocker Recovery
 
-# \- Help Desk Operations
+\- SFC Validation
 
-# \- Customer Support Workflows
+\- DISM Validation
 
-# 
 
-# \---
 
-# 
+Skills:
 
-# \# Enterprise Support Roadmap
 
-# 
 
-# Planned Labs:
+\- Windows Security
 
-# 
+\- Endpoint Recovery
 
-# \- Windows Services Failure Recovery
+\- Incident Response
 
-# \- DNS Troubleshooting
+\- Root Cause Analysis
 
-# \- Windows Update Failures
 
-# \- Disk Space Analysis
 
-# \- Printer Troubleshooting
+\---
 
-# \- Event Viewer Analysis
 
-# \- Remote Support Workflows
 
-# \- SLA Escalation
+\# Help Desk Labs
 
-# \- End-to-End Incident Resolution
 
-# 
 
-# \---
+\## osTicket Learning Path
 
-# 
 
-# \# Supporting Documentation
 
-# 
+Topics:
 
-# Additional Resources:
 
-# 
 
-# \- One-Pagers
+\- LAMP Stack Deployment
 
-# \- Templates
+\- osTicket Installation
 
-# \- Lab Exports
+\- Help Desk Configuration
 
-# \- Logs
+\- Ticket Workflows
 
-# \- Changelog
+\- User Support Scenarios
 
-# 
 
-# \---
 
-# 
+Skills:
 
-# \# Career Focus
 
-# 
 
-# Current Areas of Development:
+\- Ticketing Systems
 
-# 
+\- Help Desk Operations
 
-# \- Enterprise IT Support
+\- Customer Support Workflows
 
-# \- Systems Administration
 
-# \- Active Directory
 
-# \- Windows Administration
+\---
 
-# \- Help Desk Operations
 
-# \- Incident Response
 
-# \- Cybersecurity Fundamentals
+\# Enterprise Support Roadmap
 
 
+
+Planned Labs:
+
+
+
+\- Windows Services Failure Recovery
+
+\- DNS Troubleshooting
+
+\- Windows Update Failures
+
+\- Disk Space Analysis
+
+\- Printer Troubleshooting
+
+\- Event Viewer Analysis
+
+\- Remote Support Workflows
+
+\- SLA Escalation
+
+\- End-to-End Incident Resolution
+
+
+
+\---
+
+
+
+\# Supporting Documentation
+
+
+
+Additional Resources:
+
+
+
+\- One-Pagers
+
+\- Templates
+
+\- Lab Exports
+
+\- Logs
+
+\- Changelog
+
+
+
+\---
+
+
+
+\# Career Focus
+
+
+
+Current Areas of Development:
+
+
+
+\- Enterprise IT Support
+
+\- Systems Administration
+
+\- Active Directory
+
+\- Windows Administration
+
+\- Help Desk Operations
+
+\- Incident Response
+
+\- Cybersecurity Fundamentals
 
