@@ -1,26 +1,26 @@
 # \# Enterprise Systems Support Portfolio
 
-# 
+ 
 
 # \## Overview
 
-# 
+ 
 
 # This repository documents my hands-on journey building practical enterprise IT support, systems administration, and troubleshooting skills.
 
-# 
+ 
 
 # The portfolio focuses on real-world scenarios involving Active Directory, Windows administration, endpoint support, ticketing systems, operating system deployment, troubleshooting, and incident response.
 
-# 
+ 
 
 # All projects are documented with screenshots, technical notes, research, and validation evidence.
 
-# 
+ 
 
 # \---
 
-# 
+ 
 
 # \# Foundation Projects
 
@@ -32,11 +32,11 @@
 
 # Build and configure a Windows enterprise lab environment using VirtualBox.
 
-# 
+ 
 
 # Skills Demonstrated:
 
-# 
+ 
 
 # \- Virtual Machine Configuration
 
@@ -50,23 +50,23 @@
 
 # \- Lab Architecture
 
-# 
+ 
 
-# \---
+---
 
-# 
+ 
 
 # \# Completed Labs
 
-# 
+ 
 
 # \## LAB01 – Active Directory Administration
 
-# 
+ 
 
 # Topics:
 
-# 
+ 
 
 # \- AD DS Installation
 
@@ -80,11 +80,11 @@
 
 # \- Access Validation
 
-# 
+ 
 
 # Skills:
 
-# 
+ 
 
 # \- Active Directory Administration
 
@@ -94,19 +94,19 @@
 
 # \- NTFS Permissions
 
-# 
+ 
 
-# \---
+---
 
-# 
+ 
 
 # \## LAB02 – Software Installation Failure
 
-# 
+ 
 
 # Topics:
 
-# 
+ 
 
 # \- Software Deployment
 
@@ -118,11 +118,11 @@
 
 # \- Root Cause Analysis
 
-# 
+ 
 
 # Skills:
 
-# 
+ 
 
 # \- Desktop Support
 
@@ -130,19 +130,19 @@
 
 # \- Incident Documentation
 
-# 
+ 
 
-# \---
+---
 
-# 
+ 
 
 # \## LAB03 – Secure Boot \& BitLocker Incident Response
 
-# 
+ 
 
 # Topics:
 
-# 
+ 
 
 # \- Secure Boot Validation
 
@@ -154,11 +154,11 @@
 
 # \- DISM Validation
 
-# 
+ 
 
 # Skills:
 
-# 
+ 
 
 # \- Windows Security
 
@@ -168,23 +168,23 @@
 
 # \- Root Cause Analysis
 
-# 
+ 
 
 # \---
 
-# 
+ 
 
 # \# Help Desk Labs
 
-# 
+ 
 
 # \## osTicket Learning Path
 
-# 
+ 
 
 # Topics:
 
-# 
+ 
 
 # \- LAMP Stack Deployment
 
@@ -196,11 +196,11 @@
 
 # \- User Support Scenarios
 
-# 
+ 
 
 # Skills:
 
-# 
+ 
 
 # \- Ticketing Systems
 
@@ -208,19 +208,19 @@
 
 # \- Customer Support Workflows
 
-# 
+ 
 
-# \---
+---
 
-# 
+ 
 
 # \# Enterprise Support Roadmap
 
-# 
+ 
 
 # Planned Labs:
 
-# 
+ 
 
 # \- Windows Services Failure Recovery
 
@@ -240,19 +240,19 @@
 
 # \- End-to-End Incident Resolution
 
-# 
+ 
 
-# \---
+---
 
-# 
+ 
 
 # \# Supporting Documentation
 
-# 
+ 
 
 # Additional Resources:
 
-# 
+ 
 
 # \- One-Pagers
 
@@ -264,19 +264,19 @@
 
 # \- Changelog
 
-# 
+ 
 
 # \---
 
-# 
+ 
 
 # \# Career Focus
 
-# 
+ 
 
 # Current Areas of Development:
 
-# 
+
 
 # \- Enterprise IT Support
 
