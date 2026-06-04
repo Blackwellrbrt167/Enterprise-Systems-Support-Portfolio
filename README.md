@@ -1,16 +1,31 @@
-\# Enterprise Systems Support Portfolio
+# Enterprise Systems Support Portfolio
 
 
 
-\## Overview
 
+
+## Overview
+
+
+
+ 
+
+This repository documents my hands-on journey building practical enterprise IT support, systems administration, and troubleshooting skills.
+
+ 
 
 
 This repository documents my hands-on journey building practical enterprise IT support, systems administration, and troubleshooting skills.
 
 
 
+
+
 The portfolio focuses on real-world scenarios involving Active Directory, Windows administration, endpoint support, ticketing systems, operating system deployment, troubleshooting, and incident response.
+
+ 
+
+
 
 
 
@@ -22,11 +37,15 @@ All projects are documented with screenshots, technical notes, research, and val
 
 
 
-\# Foundation Projects
+
+## Foundation Projects
+
+
+ 
 
 
 
-\## Enterprise VM Buildout
+## Enterprise VM Buildout
 
 
 
@@ -34,19 +53,37 @@ Build and configure a Windows enterprise lab environment using VirtualBox.
 
 
 
+
 Skills Demonstrated:
+
+
+
+---
+
+ 
+
 
 
 
 \- Virtual Machine Configuration
 
+
+
 \- Windows Deployment
+
 
 \- Networking Fundamentals
 
+ 
+
+
 \- Snapshot Management
 
+
 \- System Preparation
+
+ 
+
 
 \- Lab Architecture
 
@@ -56,11 +93,15 @@ Skills Demonstrated:
 
 
 
-\# Completed Labs
+
+## Completed Labs
 
 
 
-\## LAB01 – Active Directory Administration
+
+
+
+## LAB01 – Active Directory Administration
 
 
 
@@ -68,15 +109,29 @@ Topics:
 
 
 
+
 \- AD DS Installation
+
+ 
+
+---
+
+ 
+
 
 \- Domain Promotion
 
+
 \- Organizational Units
+
+ 
 
 \- User Management
 
+
 \- Group Policy
+
+ 
 
 \- Access Validation
 
@@ -86,9 +141,16 @@ Skills:
 
 
 
+ 
+
+
 \- Active Directory Administration
 
+
 \- Group Policy Management
+
+ 
+
 
 \- Identity Management
 
@@ -96,12 +158,27 @@ Skills:
 
 
 
+
 \---
 
+=======
+ 
+
+---
+
+ 
 
 
-\## LAB02 – Software Installation Failure
 
+
+## LAB02 – Software Installation Failure
+
+ 
+
+
+
+
+ 
 
 
 Topics:
@@ -112,11 +189,19 @@ Topics:
 
 \- Installer Troubleshooting
 
+
 \- Log Review
+
+ 
+
 
 \- Ticket Documentation
 
+
 \- Root Cause Analysis
+
+ 
+
 
 
 
@@ -124,19 +209,36 @@ Skills:
 
 
 
+ 
+
+
 \- Desktop Support
+
 
 \- Software Troubleshooting
 
+ 
+
+
 \- Incident Documentation
+
+
+ 
+
 
 
 
 \---
 
+ 
 
 
-\## LAB03 – Secure Boot \& BitLocker Incident Response
+
+
+ 
+
+
+## LAB03 – Secure Boot \& BitLocker Incident Response
 
 
 
@@ -144,9 +246,16 @@ Topics:
 
 
 
+ 
+
+
 \- Secure Boot Validation
 
+
 \- TPM Verification
+
+ 
+
 
 \- BitLocker Recovery
 
@@ -156,13 +265,22 @@ Topics:
 
 
 
+
 Skills:
 
+ 
 
+---
+
+ 
 
 \- Windows Security
 
+
 \- Endpoint Recovery
+
+ 
+
 
 \- Incident Response
 
@@ -174,16 +292,28 @@ Skills:
 
 
 
-\# Help Desk Labs
+# Help Desk Labs
+
+## OSTicket Learning Path
 
 
+ 
 
-\## osTicket Learning Path
+---
+
+ 
+
 
 
 
 Topics:
 
+ 
+
+
+
+
+ 
 
 
 \- LAMP Stack Deployment
@@ -196,15 +326,22 @@ Topics:
 
 \- User Support Scenarios
 
-
-
 Skills:
 
 
 
+
+
+ 
+
+
 \- Ticketing Systems
 
+
 \- Help Desk Operations
+
+
+
 
 \- Customer Support Workflows
 
@@ -214,7 +351,7 @@ Skills:
 
 
 
-\# Enterprise Support Roadmap
+## Enterprise Support Roadmap
 
 
 
@@ -246,7 +383,7 @@ Planned Labs:
 
 
 
-\# Supporting Documentation
+## Supporting Documentation
 
 
 
@@ -270,7 +407,7 @@ Additional Resources:
 
 
 
-\# Career Focus
+## Career Focus
 
 
 
