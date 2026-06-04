@@ -6,7 +6,7 @@
 
  
 
-# This repository documents my hands-on journey building practical enterprise IT support, systems administration, and troubleshooting skills.
+#This repository documents my hands-on journey building practical enterprise IT support, systems administration, and troubleshooting skills.
 
  
 
