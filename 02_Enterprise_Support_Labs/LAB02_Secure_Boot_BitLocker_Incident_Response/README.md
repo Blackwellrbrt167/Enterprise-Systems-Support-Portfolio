@@ -1,4 +1,4 @@
-\# LAB02 - Secure Boot & Bitlocker Incident Response
+# LAB02 - Secure Boot & Bitlocker Incident Response
 
 
 
