@@ -1,4 +1,4 @@
-\# LAB02 – Software Installation Failure Investigation
+\# LAB01 – Software Installation Failure Investigation
 
 
 
