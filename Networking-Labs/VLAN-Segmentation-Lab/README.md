@@ -118,7 +118,160 @@ Devices in the same VLAN but connected to different switches could not communica
 
 After configuring the 802.1Q trunk, devices in the same VLAN across different switches could communicate.
 
-### Final Result
+## Guided Technical Walkthrough
+
+### Step 1 – Build the Network Topology
+
+The lab environment consisted of two Cisco Catalyst 2960 switches connected through a Gigabit Ethernet link and four endpoint devices.
+
+![Initial Topology](Screenshots/VLAN01_Initial_Topology.png)
+
+Purpose:
+
+To simulate a small enterprise network where users are connected through multiple access switches.
+
+---
+
+### Step 2 – Configure Endpoint IP Addressing
+
+Each endpoint was assigned a static IPv4 address.
+
+![PC0 Configuration](Screenshots/VLAN02_PC0_IP_Configuration.png)
+
+![PC1 Configuration](Screenshots/VLAN03_PC1_IP_Configuration.png)
+
+![PC2 Configuration](Screenshots/VLAN04_PC2_IP_Configuration.png)
+
+![PC3 Configuration](Screenshots/VLAN05_PC3_IP_Configuration.png)
+
+Observation:
+
+All systems initially existed within the same subnet and were capable of communicating with one another.
+
+---
+
+### Step 3 – Verify Baseline Connectivity
+
+Connectivity testing was performed before VLAN implementation.
+
+![Baseline Connectivity](Screenshots/VLAN08_PC0_PreSegmentation_Connectivity_Test.png)
+
+Result:
+
+All devices responded successfully to ICMP requests.
+
+This confirmed proper Layer 2 connectivity before segmentation was introduced.
+
+---
+
+### Step 4 – Create VLANs and Assign Access Ports
+
+VLAN 20 and VLAN 30 were created on both switches.
+
+![Switch0 VLAN Configuration](Screenshots/VLAN13_Switch0_VLAN_Creation_Access_Port_Assignment.png)
+
+![Switch1 VLAN Configuration](Screenshots/VLAN14_Switch1_VLAN_Creation_Access_Port_Assignment.png)
+
+Port Assignments:
+
+- VLAN 20 → PC0 and PC1
+- VLAN 30 → PC2 and PC3
+
+Purpose:
+
+To logically separate traffic into independent broadcast domains.
+
+---
+
+### Step 5 – Verify VLAN Membership
+
+Access port assignments were validated using Cisco IOS.
+
+![Switch0 VLAN20 Verification](Screenshots/VLAN15_Switch0_F0-1_VLAN20_Verification.png)
+
+![Switch0 VLAN30 Verification](Screenshots/VLAN16_Switch0_F0-2_VLAN30_Verification.png)
+
+Verification confirmed that ports were assigned to the intended VLANs.
+
+---
+
+### Step 6 – Validate Segmentation
+
+Connectivity testing was repeated after VLAN implementation.
+
+![Isolation Validation](Screenshots/VLAN19_PC0_VLAN_Isolation_Test_PC1_Failure.png)
+
+Observation:
+
+Devices that previously communicated successfully could no longer communicate when assigned to separate VLANs.
+
+This demonstrated VLAN-based traffic isolation.
+
+---
+
+### Step 7 – Investigate Same-VLAN Communication Failure
+
+Although PC0 and PC1 belonged to VLAN 20, communication still failed because the VLAN traffic could not traverse between switches.
+
+![Pre-Trunk Validation](Screenshots/VLAN20_PC0_PreTrunk_VLAN20_Communication_Failure.png)
+
+Key Finding:
+
+VLAN membership alone does not permit communication across switches.
+
+A trunk link is required to transport VLAN traffic.
+
+---
+
+### Step 8 – Configure IEEE 802.1Q Trunking
+
+The inter-switch connection was converted into a trunk link.
+
+![Trunk Configuration](Screenshots/VLAN27_Switch0_G0-1_Trunk_Configuration.png)
+
+Purpose:
+
+To allow multiple VLANs to traverse a single physical connection while preserving VLAN identification through tagging.
+
+---
+
+### Step 9 – Verify Trunk Operation
+
+Trunk configuration was validated using Cisco IOS.
+
+![Trunk Verification](Screenshots/VLAN28_Switch0_G0-1_Trunk_Verified.png)
+
+Verification confirmed:
+
+- Administrative Mode: Trunk
+- Operational Mode: Trunk
+- Encapsulation: 802.1Q
+
+---
+
+### Step 10 – Validate Successful Communication
+
+Connectivity testing was repeated after trunk implementation.
+
+![Post-Trunk Validation](Screenshots/VLAN29_PC0_To_PC1_PostTrunk_VLAN20_Success.png)
+
+Result:
+
+Devices within VLAN 20 successfully communicated across switches.
+
+---
+
+### Step 11 – Validate Continued Isolation
+
+Traffic isolation remained intact after trunk implementation.
+
+![VLAN Isolation Validation](Screenshots/VLAN30_PC0_To_PC2_VLAN30_Isolation_Validated.png)
+
+Result:
+
+Devices assigned to different VLANs remained unable to communicate.
+
+This confirmed successful implementation of network segmentation.### Final Result
 
 - VLAN 20 devices could communicate with VLAN 20 devices.
 - VLAN 30 devices could communicate with VLAN 30 devices.
