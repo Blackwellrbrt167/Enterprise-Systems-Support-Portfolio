@@ -170,4 +170,4 @@ Inter-VLAN Routing allows isolated segments to communicate when business operati
 
 Additional implementation details, screenshots, research questions, and technical analysis are available in:
 
-Documentation/InterVLAN_Routing_Lab_Rebuild_Guide_with Screen prints.docx
+Documentation/InterVLAN_Routing_Lab_Implementation_Guide.docx
