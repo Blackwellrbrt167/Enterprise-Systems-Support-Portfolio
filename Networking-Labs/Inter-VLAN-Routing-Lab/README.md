@@ -1,308 +1,173 @@
-\# Inter-VLAN Routing Lab (Router-on-a-Stick)
+# Inter-VLAN Routing Lab (Router-on-a-Stick)
 
-
-
-\## Overview
-
-
+## Overview
 
 This lab demonstrates Inter-VLAN Routing using the Router-on-a-Stick (ROAS) method in Cisco Packet Tracer. The objective was to create multiple VLANs, verify traffic isolation, and then enable communication between VLANs through Layer 3 routing.
 
-
-
 The lab simulates how organizations segment networks for security and performance while still allowing controlled communication between departments.
 
+---
 
+## Technologies Used
 
-\---
+* Cisco Packet Tracer
+* Cisco 2960 Switch
+* Cisco 1941 Router
+* VLAN Configuration
+* 802.1Q Trunking
+* Router-on-a-Stick (ROAS)
+* IPv4 Addressing
+* Inter-VLAN Routing
 
+---
 
+## Network Topology
 
-\## Technologies Used
+The lab topology consisted of one Cisco 1941 router, one Cisco 2960 switch, and four end-user workstations.
 
+![Initial Topology](Screenshots/01_InterVLAN_Topology.png)
 
+Two VLANs were created to simulate network segmentation between separate departments.
 
-\- Cisco Packet Tracer
+---
 
-\- Cisco 2960 Switch
+## IP Address Configuration
 
-\- Cisco 1941 Router
+### VLAN 20 Devices
 
-\- VLAN Configuration
+![PC0 Configuration](Screenshots/02_InterVLAN_PC0_IP_Config.png)
 
-\- 802.1Q Trunking
+![PC1 Configuration](Screenshots/03_InterVLAN_PC1_IP_Config.png)
 
-\- Router-on-a-Stick (ROAS)
+VLAN 20 devices were configured within the 172.16.1.0/24 network and assigned the default gateway of 172.16.1.1.
 
-\- IPv4 Addressing
+### VLAN 30 Devices
 
-\- Inter-VLAN Routing
+![PC2 Configuration](Screenshots/04_InterVLAN_PC2_IP_Config.png)
 
+![PC3 Configuration](Screenshots/05_InterVLAN_PC3_IP_Config.png)
 
+VLAN 30 devices were configured within the 172.16.2.0/24 network and assigned the default gateway of 172.16.2.1.
 
-\---
+---
 
+## VLAN Configuration
 
+![VLAN 20 Configuration](Screenshots/06_InterVLAN_VLAN20_Config.png)
 
-\## Lab Objectives
+![VLAN 30 Configuration](Screenshots/07_InterVLAN_VLAN30_Config.png)
 
+VLAN 20 and VLAN 30 were created on the switch and access ports were assigned to the appropriate VLANs.
 
+---
 
-\- Create VLAN 20 and VLAN 30
+## Trunk Configuration
 
-\- Assign switch ports to VLANs
+![Trunk Configuration](Screenshots/08_InterVLAN_Trunk_Config.png)
 
-\- Configure a trunk link between the switch and router
+The connection between the switch and router was configured as an 802.1Q trunk. This allowed traffic from multiple VLANs to traverse a single physical connection.
 
-\- Configure router subinterfaces using 802.1Q encapsulation
+---
 
-\- Verify VLAN isolation before routing
+## Router-on-a-Stick Configuration
 
-\- Verify successful communication after routing configuration
+![Router Subinterfaces](Screenshots/09_InterVLAN_Router_Subinterfaces.png)
 
+![Interface Activation](Screenshots/10_InterVLAN_G0_Activation.png)
 
+Router subinterfaces were configured using 802.1Q encapsulation. Each subinterface served as the default gateway for its respective VLAN.
 
-\---
+---
 
+## Validation Testing
 
+### Same VLAN Communication
 
-\## Network Topology
+![Same VLAN Ping](Screenshots/11_InterVLAN_PreRouting_SameVLAN_Ping.png)
 
+Devices within the same VLAN successfully communicated before routing was introduced.
 
+### VLAN Isolation Verification
 
-The lab consisted of:
+![PC0 to PC2 Failure](Screenshots/12_InterVLAN_PreRouting_PC0_PC2_Fail.png)
 
+![PC0 to PC3 Failure](Screenshots/13_InterVLAN_PreRouting_PC0_PC3_Fail.png)
 
+Before Inter-VLAN Routing was configured, devices in separate VLANs were unable to communicate. These failed ping tests confirmed that VLAN segmentation was functioning correctly.
 
-\- 1 Cisco Router
+### Additional VLAN Isolation Tests
 
-\- 1 Cisco Switch
+![PC3 to PC0 Failure](Screenshots/15_InterVLAN_PreRouting_PC3_PC0_Fail.png)
 
-\- 4 End User Workstations
+![PC3 to PC1 Failure](Screenshots/16_InterVLAN_PreRouting_PC3_PC1_Fail.png)
 
-\- VLAN 20
+![PC2 to PC3 Success](Screenshots/17_InterVLAN_PreRouting_PC2_PC3_Success.png)
 
-\- VLAN 30
+![PC2 to PC0 Failure](Screenshots/18_InterVLAN_PreRouting_PC2_PC0_Fail.png)
 
+Additional testing further validated proper VLAN separation and same-VLAN communication.
 
+---
 
-Traffic from both VLANs was carried across a single trunk connection to the router where subinterfaces performed Layer 3 routing between the networks.
+## Inter-VLAN Routing Validation
 
+After Router-on-a-Stick was configured, communication between VLAN 20 and VLAN 30 was successfully established.
 
+### Post-Routing Testing
 
-\---
+![PC0 to PC2](Screenshots/19_InterVLAN_PostRouting_PC0_PC2_Success.png)
 
+![PC0 to PC3](Screenshots/20_InterVLAN_PostRouting_PC0_PC3_Success.png)
 
+![PC1 to PC2](Screenshots/21_InterVLAN_PostRouting_PC1_PC2_Success.png)
 
-\## IP Addressing
+![PC1 to PC3](Screenshots/22_InterVLAN_PostRouting_PC1_PC3_Success.png)
 
+![PC2 to PC0](Screenshots/23_InterVLAN_PostRouting_PC2_PC0_Success.png)
 
+![PC2 to PC1](Screenshots/24_InterVLAN_PostRouting_PC2_PC1_Success.png)
 
-\### VLAN 20
+![PC3 to PC0](Screenshots/25_InterVLAN_PostRouting_PC3_PC0_Success.png)
 
+![PC3 to PC1](Screenshots/26_InterVLAN_PostRouting_PC3_PC1_Success.png)
 
+All cross-VLAN connectivity tests completed successfully, demonstrating proper Layer 3 routing between the segmented networks.
 
-| Device | IP Address |
+---
 
-|----------|------------|
+## Final Topology
 
-| PC0 | 172.16.1.2 |
+![Final Topology](Screenshots/27_InterVLAN_Final_Topology.png)
 
-| PC1 | 172.16.1.3 |
+The completed topology demonstrates VLAN segmentation, 802.1Q trunking, and successful Inter-VLAN Routing using the Router-on-a-Stick method.
 
-| Gateway | 172.16.1.1 |
+---
 
-
-
-\### VLAN 30
-
-
-
-| Device | IP Address |
-
-|----------|------------|
-
-| PC2 | 172.16.2.4 |
-
-| PC3 | 172.16.2.5 |
-
-| Gateway | 172.16.2.1 |
-
-
-
-\---
-
-
-
-\## Configuration Summary
-
-
-
-\### Switch Configuration
-
-
-
-\- Created VLAN 20 and VLAN 30
-
-\- Assigned access ports to the appropriate VLANs
-
-\- Configured a trunk port to transport traffic from multiple VLANs over a single link
-
-
-
-\### Router Configuration
-
-
-
-\- Created subinterface G0/0.20
-
-\- Created subinterface G0/0.30
-
-\- Applied 802.1Q encapsulation
-
-\- Configured VLAN gateways
-
-\- Enabled routing between VLANs
-
-
-
-\---
-
-
-
-\## Validation Testing
-
-
-
-\### Before Routing
-
-
-
-Testing confirmed VLAN segmentation was functioning correctly.
-
-
-
-Successful Communication:
-
-
-
-\- VLAN 20 to VLAN 20
-
-\- VLAN 30 to VLAN 30
-
-
-
-Failed Communication:
-
-
-
-\- VLAN 20 to VLAN 30
-
-\- VLAN 30 to VLAN 20
-
-
-
-These failures were expected because devices in separate VLANs cannot communicate without Layer 3 routing.
-
-
-
-\### After Routing
-
-
-
-After configuring Router-on-a-Stick, devices in VLAN 20 and VLAN 30 successfully communicated across VLAN boundaries.
-
-
-
-Testing verified:
-
-
-
-\- PC0 → PC2
-
-\- PC0 → PC3
-
-\- PC1 → PC2
-
-\- PC1 → PC3
-
-\- PC2 → PC0
-
-\- PC2 → PC1
-
-\- PC3 → PC0
-
-\- PC3 → PC1
-
-
-
-All tests completed successfully.
-
-
-
-\---
-
-
-
-\## Real-World Relevance
-
-
+## Real-World Relevance
 
 Organizations commonly use VLANs to separate departments, users, and security zones while maintaining centralized network infrastructure.
 
+Inter-VLAN Routing allows isolated segments to communicate when business operations require it while still maintaining the benefits of network segmentation.
 
+---
 
-Inter-VLAN Routing allows those isolated segments to communicate when business operations require it. This design improves security, reduces unnecessary broadcast traffic, and provides better network management.
+## Skills Demonstrated
 
+* VLAN Creation and Management
+* Cisco Switch Configuration
+* 802.1Q Trunking
+* Router-on-a-Stick Configuration
+* IPv4 Addressing
+* Layer 2 Segmentation
+* Layer 3 Routing
+* Connectivity Validation
+* Network Troubleshooting
+* Network Documentation
 
+---
 
-\---
+## Supporting Documentation
 
+Additional implementation details, screenshots, research questions, and technical analysis are available in:
 
-
-\## Skills Demonstrated
-
-
-
-\- VLAN Creation and Management
-
-\- Cisco Switch Configuration
-
-\- 802.1Q Trunking
-
-\- Router-on-a-Stick Configuration
-
-\- IPv4 Addressing
-
-\- Layer 2 Segmentation
-
-\- Layer 3 Routing
-
-\- Connectivity Validation
-
-\- Network Troubleshooting
-
-\- Network Documentation
-
-
-
-\---
-
-
-
-\## Documentation
-
-
-
-Additional implementation details, screenshots, research questions, and technical analysis are included in:
-
-
-
-```text
-
-Documentation/
-
-└── InterVLAN\_Routing\_Lab\_Rebuild\_Guide\_with Screen prints.docx
-
-```
-
+Documentation/InterVLAN_Routing_Lab_Rebuild_Guide_with Screen prints.docx
