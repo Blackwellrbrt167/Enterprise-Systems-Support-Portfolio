@@ -90,7 +90,7 @@ To ensure the issue was not caused by a disconnected interface, I verified inter
 
 
 
-![Interface Status Verification](../Screenshots/24_NetworkSecurity_StickyMAC_Interface_Status.png)
+![Interface Status Verification](../Screenshots/24_NetworkSecurity_StickyMAC_Interface_Status_Verification.png)
 
 
 
