@@ -14,7 +14,7 @@ The lab simulates how organizations use segmentation and switch security feature
 
 
 
-\---
+---
 
 
 
@@ -22,31 +22,31 @@ The lab simulates how organizations use segmentation and switch security feature
 
 
 
-\- Cisco Packet Tracer
+- Cisco Packet Tracer
 
-\- Cisco 2960 Switch
+- Cisco 2960 Switch
 
-\- VLAN Configuration
+- VLAN Configuration
 
-\- Port Security
+- Port Security
 
-\- Sticky MAC Addressing
+- Sticky MAC Addressing
 
-\- Access Port Configuration
+- Access Port Configuration
 
-\- IPv4 Addressing
+- IPv4 Addressing
 
-\- Network Segmentation
+- Network Segmentation
 
-\- Network Hardening
-
-
-
-\---
+- Network Hardening
 
 
 
-\- Network Segmentation Configuration
+---
+
+
+
+- Network Segmentation Configuration
 
 
 
@@ -66,7 +66,7 @@ VLAN 20 and VLAN 30 were created to establish separate broadcast domains and pro
 
 
 
-\---
+---
 
 
 
@@ -98,11 +98,11 @@ Ports Fa0/3 and Fa0/4 were assigned to VLAN 30.
 
 
 
-\---
+---
 
 
 
-\- Configuration Verification
+- Configuration Verification
 
 
 
@@ -142,11 +142,11 @@ Interface status output confirmed that connected ports were operational and assi
 
 
 
-\---
+---
 
 
 
-\- Connectivity Validation
+- Connectivity Validation
 
 
 
@@ -182,7 +182,7 @@ Devices within VLAN 30 successfully communicated, confirming proper VLAN members
 
 
 
-\-# Cross-VLAN Isolation Testing
+## Cross-VLAN Isolation Testing
 
 
 
@@ -202,15 +202,15 @@ Cross-VLAN communication attempts failed as expected. These failures confirmed t
 
 
 
-\---
+---
 
 
 
-\- Port Security Implementation
+## Port Security Implementation
 
 
 
-\-# Initial Configuration and Troubleshooting
+## Initial Configuration and Troubleshooting
 
 
 
@@ -222,7 +222,7 @@ During implementation, configuration syntax and command behavior were reviewed a
 
 
 
-\-# Port Security Validation
+## Port Security Validation
 
 
 
@@ -246,11 +246,11 @@ Port security was enabled on all active access ports. The configuration limited 
 
 
 
-\---
+---
 
 
 
-\- Final Configuration Validation
+## Final Configuration Validation
 
 
 
@@ -262,11 +262,11 @@ The final running configuration confirmed that VLAN segmentation and port securi
 
 
 
-\---
+---
 
 
 
-\- Security Benefits
+## Security Benefits
 
 
 
@@ -274,25 +274,25 @@ The security controls implemented in this lab provide several important protecti
 
 
 
-\- Limits unauthorized device connections
+- Limits unauthorized device connections
 
-\- Restricts MAC address learning
+- Restricts MAC address learning
 
-\- Reduces opportunities for rogue device access
+- Reduces opportunities for rogue device access
 
-\- Reinforces network segmentation
+- Reinforces network segmentation
 
-\- Supports defense-in-depth principles
+- Supports defense-in-depth principles
 
-\- Reduces opportunities for lateral movement
-
-
-
-\---
+- Reduces opportunities for lateral movement
 
 
 
-\- Real-World Relevance
+---
+
+
+
+- Real-World Relevance
 
 
 
@@ -304,47 +304,47 @@ These controls are frequently found in corporate offices, healthcare environment
 
 
 
-\---
+---
 
 
 
-\- Skills Demonstrated
+- Skills Demonstrated
 
 
 
-\- VLAN Creation and Management
+- VLAN Creation and Management
 
-\- Access Port Configuration
+- Access Port Configuration
 
-\- Network Segmentation
+- Network Segmentation
 
-\- Connectivity Validation
+- Connectivity Validation
 
-\- Port Security Configuration
+- Port Security Configuration
 
-\- Sticky MAC Addressing
+- Sticky MAC Addressing
 
-\- Configuration Verification
+- Configuration Verification
 
-\- Network Hardening
+- Network Hardening
 
-\- Network Troubleshooting
+- Network Troubleshooting
 
-\- Security Validation
+- Security Validation
 
-\- Technical Documentation
-
-
-
-\---
+- Technical Documentation
 
 
 
-\- Supporting Documentation
+---
 
 
 
-\- \[Implementation Guide](Documentation/Network_Security_Hardening_Implementation_Guide.md)
+- Supporting Documentation
 
-\- Network_Security_Hardening_Implementation_Guide.docx
+
+
+- \[Implementation Guide](Documentation/Network_Security_Hardening_Implementation_Guide.md)
+
+- Network_Security_Hardening_Implementation_Guide.docx
 
