@@ -78,7 +78,7 @@ The MAC address table remained empty and the Sticky MAC count stayed at zero.
 
 
 
-!\[Sticky MAC Initial Observation](../Screenshots/23\_NetworkSecurity\_StickyMAC\_Initial\_Observation.png)
+![Sticky MAC Initial Observation](../Screenshots/23_NetworkSecurity_StickyMAC_Initial_Observation.png)
 
 
 
@@ -90,7 +90,7 @@ To ensure the issue was not caused by a disconnected interface, I verified inter
 
 
 
-!\[Interface Status Verification](../Screenshots/24\_NetworkSecurity\_StickyMAC\_Interface\_Status.png)
+![Interface Status Verification](../Screenshots/24_NetworkSecurity_StickyMAC_Interface_Status.png)
 
 
 
@@ -102,7 +102,7 @@ I then checked the MAC address table to determine whether the switch had learned
 
 
 
-!\[Empty MAC Table](../Screenshots/25\_NetworkSecurity\_StickyMAC\_Empty\_MAC\_Table.png)
+![Empty MAC Table](../Screenshots/25_NetworkSecurity_StickyMAC_Empty_MAC_Table.png)
 
 
 
@@ -138,7 +138,7 @@ To test this theory, I generated ICMP traffic between connected workstations usi
 
 
 
-!\[Traffic Generation](../Screenshots/26\_NetworkSecurity\_StickyMAC\_Traffic\_Generation.png)
+![Traffic Generation](../Screenshots/26_NetworkSecurity_StickyMAC_Traffic_Generation.png)
 
 
 
@@ -154,7 +154,7 @@ After generating traffic, the MAC address table populated successfully.
 
 
 
-!\[MAC Table Populated](../Screenshots/27\_NetworkSecurity\_StickyMAC\_MAC\_Table\_Populated.png)
+![MAC Table Populated](../Screenshots/27_NetworkSecurity_StickyMAC_MAC_Table_Populated.png)
 
 
 
@@ -162,7 +162,7 @@ The Sticky MAC bindings were then verified on the secured interfaces.
 
 
 
-!\[Sticky MAC Verification](../Screenshots/28\_NetworkSecurity\_StickyMAC\_Verification.png)
+![Sticky MAC Verification](../Screenshots/28_NetworkSecurity_StickyMAC_Verification.png)
 
 
 
@@ -170,13 +170,13 @@ Validation confirmed:
 
 
 
-\- MAC addresses appeared in the MAC address table
+- MAC addresses appeared in the MAC address table
 
-\- Entries were listed as STATIC due to Sticky MAC configuration
+- Entries were listed as STATIC due to Sticky MAC configuration
 
-\- Sticky MAC count increased to 1 on secured interfaces
+- Sticky MAC count increased to 1 on secured interfaces
 
-\- No security violations occurred
+- No security violations occurred
 
 
 
