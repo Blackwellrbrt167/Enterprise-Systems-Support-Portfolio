@@ -46,19 +46,19 @@ The lab simulates how organizations use segmentation and switch security feature
 
 
 
-\## Network Segmentation Configuration
+\- Network Segmentation Configuration
 
 
 
-\### VLAN Creation
+\# VLAN Creation
 
 
 
-!\[VLAN 20 Creation](Screenshots/01\_NetworkSecurity\_VLAN20\_Creation.png)
+![VLAN 20 Creation](Screenshots/01_NetworkSecurity_VLAN20_Creation.png)
 
 
 
-!\[VLAN 30 Creation](Screenshots/02\_NetworkSecurity\_VLAN30\_Creation.png)
+![VLAN 30 Creation](Screenshots/02_NetworkSecurity_VLAN30_Creation.png)
 
 
 
@@ -70,15 +70,15 @@ VLAN 20 and VLAN 30 were created to establish separate broadcast domains and pro
 
 
 
-\### Access Port Assignments
+\# Access Port Assignments
 
 
 
-!\[Fa0/1 VLAN 20](Screenshots/03\_NetworkSecurity\_F0-1\_VLAN20\_Assignment.png)
+![Fa0/1 VLAN 20](Screenshots/03_NetworkSecurity_F0-1_VLAN20_Assignment.png)
 
 
 
-!\[Fa0/2 VLAN 20](Screenshots/04\_NetworkSecurity\_F0-2\_VLAN20\_Assignment.png)
+![Fa0/2 VLAN 20](Screenshots/04_NetworkSecurity_F0-2_VLAN20_Assignment.png)
 
 
 
@@ -86,11 +86,11 @@ Ports Fa0/1 and Fa0/2 were assigned to VLAN 20.
 
 
 
-!\[Fa0/3 VLAN 30](Screenshots/05\_NetworkSecurity\_F0-3\_VLAN30\_Assignment.png)
+![Fa0/3 VLAN 30](Screenshots/05_NetworkSecurity_F0-3_VLAN30_Assignment.png)
 
 
 
-!\[Fa0/4 VLAN 30](Screenshots/06\_NetworkSecurity\_F0-4\_VLAN30\_Assignment.png)
+![Fa0/4 VLAN 30](Screenshots/06_NetworkSecurity_F0-4_VLAN30_Assignment.png)
 
 
 
@@ -102,15 +102,15 @@ Ports Fa0/3 and Fa0/4 were assigned to VLAN 30.
 
 
 
-\## Configuration Verification
+\- Configuration Verification
 
 
 
-\### VLAN Membership Validation
+\# VLAN Membership Validation
 
 
 
-!\[Show VLAN Brief](Screenshots/07\_NetworkSecurity\_Show\_VLAN\_Brief.png)
+![Show VLAN Brief](Screenshots/07_NetworkSecurity_Show_VLAN_Brief.png)
 
 
 
@@ -118,11 +118,11 @@ The VLAN database was reviewed to verify VLAN creation and correct port membersh
 
 
 
-\### Running Configuration Review
+\# Running Configuration Review
 
 
 
-!\[Running Configuration](Screenshots/08\_NetworkSecurity\_Show\_Running\_Config.png)
+![Running Configuration](Screenshots/08_NetworkSecurity_Show_Running_Config.png)
 
 
 
@@ -130,11 +130,11 @@ The running configuration was reviewed to confirm VLAN assignments and switch co
 
 
 
-\### Interface Status Verification
+\# Interface Status Verification
 
 
 
-!\[Interface Status](Screenshots/09\_NetworkSecurity\_Show\_Interface\_Status.png)
+![Interface Status](Screenshots/09_NetworkSecurity_Show_Interface_Status.png)
 
 
 
@@ -146,19 +146,19 @@ Interface status output confirmed that connected ports were operational and assi
 
 
 
-\## Connectivity Validation
+\- Connectivity Validation
 
 
 
-\### VLAN 20 Communication
+\# VLAN 20 Communication
 
 
 
-!\[BB to RB4](Screenshots/10\_NetworkSecurity\_VLAN20\_BB\_to\_RB4\_Ping.png)
+![BB to RB4](Screenshots/10_NetworkSecurity_VLAN20_BB_to_RB4_Ping.png)
 
 
 
-!\[RB4 to BB](Screenshots/11\_NetworkSecurity\_VLAN20\_RB4\_to\_BB\_Ping.png)
+![RB4 to BB](Screenshots/11_NetworkSecurity_VLAN20_RB4_to_BB_Ping.png)
 
 
 
@@ -166,15 +166,15 @@ Devices within VLAN 20 successfully communicated, confirming proper Layer 2 conn
 
 
 
-\### VLAN 30 Communication
+\# VLAN 30 Communication
 
 
 
-!\[NJB to ICB](Screenshots/12\_NetworkSecurity\_VLAN30\_NJB\_to\_ICB\_Ping.png)
+![NJB to ICB](Screenshots/12_NetworkSecurity_VLAN30_NJB_to_ICB_Ping.png)
 
 
 
-!\[ICB to NJB](Screenshots/13\_NetworkSecurity\_VLAN30\_ICB\_to\_NJB\_Ping.png)
+![ICB to NJB](Screenshots/13_NetworkSecurity_VLAN30_ICB_to_NJB_Ping.png)
 
 
 
@@ -182,19 +182,19 @@ Devices within VLAN 30 successfully communicated, confirming proper VLAN members
 
 
 
-\### Cross-VLAN Isolation Testing
+\-# Cross-VLAN Isolation Testing
 
 
 
-!\[BB to NJB Failure](Screenshots/14\_NetworkSecurity\_CrossVLAN\_BB\_to\_NJB\_Fail.png)
+![BB to NJB Failure](Screenshots/14_NetworkSecurity_CrossVLAN_BB_to_NJB_Fail.png)
 
 
 
-!\[BB to ICB Failure](Screenshots/15\_NetworkSecurity\_CrossVLAN\_BB\_to\_ICB\_Fail.png)
+![BB to ICB Failure](Screenshots/15_NetworkSecurity_CrossVLAN_BB_to_ICB_Fail.png)
 
 
 
-!\[RB4 to NJB Failure](Screenshots/16\_NetworkSecurity\_CrossVLAN\_RB4\_to\_NJB\_Fail.png)
+![RB4 to NJB Failure](Screenshots/16_NetworkSecurity_CrossVLAN_RB4_to_NJB_Fail.png)
 
 
 
@@ -206,15 +206,15 @@ Cross-VLAN communication attempts failed as expected. These failures confirmed t
 
 
 
-\## Port Security Implementation
+\- Port Security Implementation
 
 
 
-\### Initial Configuration and Troubleshooting
+\-# Initial Configuration and Troubleshooting
 
 
 
-!\[Port Security Configuration](Screenshots/17\_NetworkSecurity\_PortSecurity\_Initial\_Configuration\_Error.png)
+![Port Security Configuration](Screenshots/17_NetworkSecurity_PortSecurity_Initial_Configuration_Error.png)
 
 
 
@@ -222,23 +222,23 @@ During implementation, configuration syntax and command behavior were reviewed a
 
 
 
-\### Port Security Validation
+\-# Port Security Validation
 
 
 
-!\[Fa0/1 Port Security](Screenshots/18\_NetworkSecurity\_PortSecurity\_F0-1\_Verification.png)
+![Fa0/1 Port Security](Screenshots/18_NetworkSecurity_PortSecurity_F0-1_Verification.png)
 
 
 
-!\[Fa0/2 Port Security](Screenshots/19\_NetworkSecurity\_PortSecurity\_F0-2\_Verification.png)
+![Fa0/2 Port Security](Screenshots/19_NetworkSecurity_PortSecurity_F0-2_Verification.png)
 
 
 
-!\[Fa0/3 Port Security](Screenshots/20\_NetworkSecurity\_PortSecurity\_F0-3\_Verification.png)
+![Fa0/3 Port Security](Screenshots/20_NetworkSecurity_PortSecurity_F0-3_Verification.png)
 
 
 
-!\[Fa0/4 Port Security](Screenshots/21\_NetworkSecurity\_PortSecurity\_F0-4\_Verification.png)
+![Fa0/4 Port Security](Screenshots/21_NetworkSecurity_PortSecurity_F0-4_Verification.png)
 
 
 
@@ -250,11 +250,11 @@ Port security was enabled on all active access ports. The configuration limited 
 
 
 
-\## Final Configuration Validation
+\- Final Configuration Validation
 
 
 
-!\[Final Running Configuration](Screenshots/22\_NetworkSecurity\_Running\_Config\_With\_PortSecurity.png)
+![Final Running Configuration](Screenshots/22_NetworkSecurity_Running_Config_With_PortSecurity.png)
 
 
 
@@ -266,7 +266,7 @@ The final running configuration confirmed that VLAN segmentation and port securi
 
 
 
-\## Security Benefits
+\- Security Benefits
 
 
 
@@ -292,7 +292,7 @@ The security controls implemented in this lab provide several important protecti
 
 
 
-\## Real-World Relevance
+\- Real-World Relevance
 
 
 
@@ -308,7 +308,7 @@ These controls are frequently found in corporate offices, healthcare environment
 
 
 
-\## Skills Demonstrated
+\- Skills Demonstrated
 
 
 
@@ -340,11 +340,11 @@ These controls are frequently found in corporate offices, healthcare environment
 
 
 
-\## Supporting Documentation
+\- Supporting Documentation
 
 
 
-\- \[Implementation Guide](Documentation/Network\_Security\_Hardening\_Implementation\_Guide.md)
+\- \[Implementation Guide](Documentation/Network_Security_Hardening_Implementation_Guide.md)
 
-\- Network\_Security\_Hardening\_Implementation\_Guide.docx
+\- Network_Security_Hardening_Implementation_Guide.docx
 
