@@ -236,6 +236,32 @@ The environment was validated through authentication testing, DNS testing, domai
 * Security validation
 * Final access validation
 
+### Evidence
+
+![Domain Join Success](99_Proof_and_Validation/screenshots/Domain_Join_Success_Confirmation.png)
+
+*Windows client successfully joined to the Active Directory domain.*
+
+![DNS Resolution](99_Proof_and_Validation/screenshots/nslookup_lab.local_Domain_resolved_to_Domain_Controller.png)
+
+*DNS resolution validated through successful name resolution of the Domain Controller.*
+
+![GPResult Validation](99_Proof_and_Validation/screenshots/LAB01_06_GPResult.png)
+
+*Group Policy processing verified through GPResult reporting.*
+
+![GPUpdate Validation](99_Proof_and_Validation/screenshots/LAB01_08_GPUpdate.png)
+
+*Group Policy refresh successfully executed using GPUpdate.*
+
+![Security Event Validation](99_Proof_and_Validation/screenshots/LAB01_09_EventViewer_Security.png)
+
+*Security-related events reviewed through Windows Event Viewer.*
+
+![Final Access Validation](99_Proof_and_Validation/screenshots/LAB01_10_Final_AccessValidation.png)
+
+*Final validation confirmed successful authentication, authorization, and policy enforcement throughout the environment.*
+*Final validation confirmed successful authentication, authorization, and policy enforcement throughout the environment.*
 ---
 
 ## Deliverables
