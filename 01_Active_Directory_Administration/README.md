@@ -46,7 +46,7 @@ This environment simulates many of the core responsibilities performed by enterp
 
 ## Phase 1 – Active Directory Domain Services Installation
 
-The first phase involved preparing the Windows Server environment and installing Active Directory Domain Services.
+The first phase involved preparing the Windows Server environment and installing Active Directory Domain Services (AD DS).
 
 ### Activities Performed
 
@@ -56,19 +56,11 @@ The first phase involved preparing the Windows Server environment and installing
 * Validated installation prerequisites
 * Completed AD DS deployment
 
-
-Delete all of that and replace it with:
-
-````markdown
 ### Evidence
 
 ![VM Setup](01_AD_DS_Install/screenshots/AD_VM_Setup_Configuration.png)
 
 *Windows Server virtual machine prepared for Active Directory deployment.*
-
-![Before You Begin](01_AD_DS_Install/screenshots/AD_Before_You_Begin_Screen.png)
-
-*Server Manager installation wizard initiated.*
 
 ![Server Roles](01_AD_DS_Install/screenshots/AD_Server_Roles.png)
 
@@ -80,11 +72,12 @@ Delete all of that and replace it with:
 
 ![Tools Added](01_AD_DS_Install/screenshots/AD_Tools_Added.png)
 
-*Administrative tools automatically installed.*
+*Administrative tools installed automatically to support Active Directory management.*
 
 ![Installation Complete](01_AD_DS_Install/screenshots/AD_Installation_Process_Complete.png)
 
 *Active Directory Domain Services installation completed successfully.*
+
 ---
 
 ## Phase 2 – Domain Controller Promotion
@@ -102,14 +95,6 @@ The server was promoted to a Domain Controller and configured as the foundation 
 * Validated domain and forest functional levels
 * Completed Domain Controller promotion
 
-### Evidence
-
-Domain promotion screenshots are located within:
-
-```text
-02_Domain_Promotion/screenshots/
-```
-
 ---
 
 ## Phase 3 – Organizational Unit Structure
@@ -123,14 +108,6 @@ Organizational Units were created to simulate departmental administration and lo
 * Implemented administrative hierarchy
 * Enabled accidental deletion protection
 * Organized administrative structure
-
-### Evidence
-
-OU structure screenshots are located within:
-
-```text
-03_OU_Structure/screenshots/
-```
 
 ---
 
@@ -149,14 +126,6 @@ User and group administration tasks were performed to simulate common enterprise
 * Investigated account lockouts
 * Validated password policy enforcement
 
-### Evidence
-
-User administration screenshots are located within:
-
-```text
-04_User_Management/screenshots/
-```
-
 ---
 
 ## Phase 5 – Group Policy Administration
@@ -169,14 +138,6 @@ Group Policy Objects were created and linked to Organizational Units to centrall
 * Configured logon message settings
 * Linked GPOs to Organizational Units
 * Validated policy deployment
-
-### Evidence
-
-Group Policy screenshots are located within:
-
-```text
-05_GPO_Basics/screenshots/
-```
 
 ---
 
@@ -194,14 +155,6 @@ The environment was validated through authentication testing, DNS testing, domai
 * Event Viewer verification
 * Security validation
 * Final access validation
-
-### Evidence
-
-Validation screenshots are located within:
-
-```text
-99_Proof_and_Validation/screenshots/
-```
 
 ---
 
