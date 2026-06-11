@@ -131,6 +131,24 @@ Organizational Units were created to simulate departmental administration and lo
 * Enabled accidental deletion protection
 * Organized administrative structure
 
+### Evidence
+
+![Root Organizational Unit](03_OU_Structure/screenshots/01_ou_careadvantage_root.png)
+
+*Root Organizational Unit structure created to establish administrative boundaries within the domain.*
+
+![Department Structure](03_OU_Structure/screenshots/02_ou_department_tree.png)
+
+*Departmental Organizational Units created to separate business functions and administrative responsibilities.*
+
+![Operations Child OU Structure](03_OU_Structure/screenshots/03_ou_operations_children.png)
+
+*Child Organizational Units created beneath Operations to support scalable administration and delegation.*
+
+![OU Protection](03_OU_Structure/screenshots/AD_New_OU_Operations_Protection_Checked.png)
+
+*Accidental deletion protection enabled to safeguard critical Active Directory objects.*
+
 ---
 
 ## Phase 4 – User and Group Administration
