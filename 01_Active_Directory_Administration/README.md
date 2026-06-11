@@ -95,6 +95,28 @@ The server was promoted to a Domain Controller and configured as the foundation 
 * Validated domain and forest functional levels
 * Completed Domain Controller promotion
 
+### Evidence
+
+![New Forest](02_Domain_Promotion/screenshots/AD_Adding_New_Forest.png)
+
+*New Active Directory forest creation initiated for the enterprise environment.*
+
+![Root Domain](02_Domain_Promotion/screenshots/AD_Domain_Root_Selected.png)
+
+*Root domain configured as the foundation of the Active Directory environment.*
+
+![Domain Controller Options](02_Domain_Promotion/screenshots/AD_Domain_Controller_Options.png)
+
+*Domain Controller options configured, including DNS integration and functional level settings.*
+
+![DSRM Password](02_Domain_Promotion/screenshots/AD_DSRM_Password.png)
+
+*Directory Services Restore Mode (DSRM) credentials configured for disaster recovery operations.*
+
+![Post Deployment Configuration](02_Domain_Promotion/screenshots/AD_Post_Deployment_Configuration_Domain_Controller_Establishment.png)
+
+*Post-deployment configuration completed and server successfully promoted to a Domain Controller.*
+
 ---
 
 ## Phase 3 – Organizational Unit Structure
