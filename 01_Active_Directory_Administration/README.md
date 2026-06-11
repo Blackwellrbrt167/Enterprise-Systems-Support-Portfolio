@@ -56,14 +56,35 @@ The first phase involved preparing the Windows Server environment and installing
 * Validated installation prerequisites
 * Completed AD DS deployment
 
+
+Delete all of that and replace it with:
+
+````markdown
 ### Evidence
 
-AD DS installation screenshots are located within:
+![VM Setup](01_AD_DS_Install/screenshots/AD_VM_Setup_Configuration.png)
 
-```text
-01_AD_DS_Install/screenshots/
-```
+*Windows Server virtual machine prepared for Active Directory deployment.*
 
+![Before You Begin](01_AD_DS_Install/screenshots/AD_Before_You_Begin_Screen.png)
+
+*Server Manager installation wizard initiated.*
+
+![Server Roles](01_AD_DS_Install/screenshots/AD_Server_Roles.png)
+
+*Active Directory Domain Services selected for installation.*
+
+![Feature Selection](01_AD_DS_Install/screenshots/AD_Feature_Select_Screen.png)
+
+*Required Active Directory management features selected.*
+
+![Tools Added](01_AD_DS_Install/screenshots/AD_Tools_Added.png)
+
+*Administrative tools automatically installed.*
+
+![Installation Complete](01_AD_DS_Install/screenshots/AD_Installation_Process_Complete.png)
+
+*Active Directory Domain Services installation completed successfully.*
 ---
 
 ## Phase 2 – Domain Controller Promotion
