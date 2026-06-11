@@ -166,6 +166,32 @@ User and group administration tasks were performed to simulate common enterprise
 * Investigated account lockouts
 * Validated password policy enforcement
 
+### Evidence
+
+![Group Creation](04_User_Management/screenshots/01_group_create_ops_users.png)
+
+*Security group created to support role-based access management within the Operations department.*
+
+![User Creation](04_User_Management/screenshots/04_users_list_ops_created.png)
+
+*User accounts successfully created and organized within the Operations Organizational Unit.*
+
+![Group Membership](04_User_Management/screenshots/05_user_memberof_jdoe.png)
+
+*User group membership validated to ensure appropriate access assignment.*
+
+![User Disablement](04_User_Management/screenshots/06_user_disabled_tbrown.png)
+
+*User account disabled as part of standard account lifecycle management procedures.*
+
+![Password Reset](04_User_Management/screenshots/07_password_reset_mssmith_1.png)
+
+*Password reset performed in accordance with common help desk support workflows.*
+
+![Account Lockout Investigation](04_User_Management/screenshots/08_simulated_account_lockout_review.png)
+
+*Account lockout reviewed and investigated using Active Directory administrative tools.*
+
 ---
 
 ## Phase 5 – Group Policy Administration
