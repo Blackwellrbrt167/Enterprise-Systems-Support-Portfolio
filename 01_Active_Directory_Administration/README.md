@@ -205,6 +205,20 @@ Group Policy Objects were created and linked to Organizational Units to centrall
 * Linked GPOs to Organizational Units
 * Validated policy deployment
 
+### Evidence
+
+![GPO Created](05_GPO_Basics/screenshots/01_gpo_created_ops_logonmsg.png)
+
+*Group Policy Object created to centrally manage user settings within the Operations Organizational Unit.*
+
+![GPO Setting Configured](05_GPO_Basics/screenshots/02_gpo_setting_logonmsg.png)
+
+*Interactive logon message configured through Group Policy Management to demonstrate centralized policy administration.*
+
+![GPO Linked](05_GPO_Basics/screenshots/03_gpo_linked_ops_ou.png)
+
+*Group Policy Object successfully linked to the Operations Organizational Unit for policy enforcement.*
+
 ---
 
 ## Phase 6 – Validation and Testing
