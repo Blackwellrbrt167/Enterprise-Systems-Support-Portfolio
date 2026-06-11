@@ -46,71 +46,70 @@ This environment simulates many of the core responsibilities performed by enterp
 
 ## Phase 1 – Active Directory Domain Services Installation
 
-The first phase involved preparing the Windows Server environment and installing Active Directory Domain Services (AD DS).
+The first phase involved preparing the Windows Server environment and installing Active Directory Domain Services.
 
 ### Activities Performed
 
 * Prepared Windows Server virtual machine
 * Installed Active Directory Domain Services
-* Added required administrative tools
+* Added required management tools
 * Validated installation prerequisites
 * Completed AD DS deployment
 
 ### Evidence
 
-![VM Setup](01_AD_DS_Install/screenshots/AD_VM Setup Configuration.png)
+AD DS installation screenshots are located within:
 
-*Windows Server virtual machine prepared for Active Directory deployment.*
+```text
+01_AD_DS_Install/screenshots/
+```
 
-![Before You Begin](01_AD_DS_Install/screenshots/AD_Before you Begin Screen.png)
-
-*Server Manager installation wizard initiated.*
-
-![Server Roles](01_AD_DS_Install/screenshots/AD_Server Roles.png)
-
-*Active Directory Domain Services selected for installation.*
-
-![Feature Selection](01_AD_DS_Install/screenshots/AD_Feature Select Screen.png)
-
-*Required Active Directory features selected.*
-
-![Tools Added](01_AD_DS_Install/screenshots/AD_Tools Added.png)
-
-*Administrative tools automatically installed.*
-
-![Installation Complete](01_AD_DS_Install/screenshots/AD_Installation Process Complete.png)
-
-*Active Directory Domain Services successfully installed.*
 ---
 
 ## Phase 2 – Domain Controller Promotion
 
-The server was promoted to a Domain Controller and configured as the foundation of the domain infrastructure.
+The server was promoted to a Domain Controller and configured as the foundation of the enterprise identity infrastructure.
 
 ### Activities Performed
 
 * Created a new forest
-* Configured root domain
+* Configured the root domain
 * Configured Domain Controller options
 * Established DSRM credentials
 * Configured DNS settings
-* Established NetBIOS naming
+* Configured NetBIOS naming
 * Validated domain and forest functional levels
 * Completed Domain Controller promotion
+
+### Evidence
+
+Domain promotion screenshots are located within:
+
+```text
+02_Domain_Promotion/screenshots/
+```
 
 ---
 
 ## Phase 3 – Organizational Unit Structure
 
-Organizational Units were created to simulate departmental administration and provide logical separation for users and resources.
+Organizational Units were created to simulate departmental administration and logical separation of resources.
 
 ### Activities Performed
 
+* Created root Organizational Units
 * Created departmental Organizational Units
-* Designed hierarchical OU structure
-* Configured Operations OU
+* Implemented administrative hierarchy
 * Enabled accidental deletion protection
 * Organized administrative structure
+
+### Evidence
+
+OU structure screenshots are located within:
+
+```text
+03_OU_Structure/screenshots/
+```
 
 ---
 
@@ -123,11 +122,19 @@ User and group administration tasks were performed to simulate common enterprise
 * Created security groups
 * Created user accounts
 * Assigned group memberships
-* Managed user placement within OUs
-* Disabled user accounts
-* Performed password resets
+* Managed OU placement
+* Disabled accounts
+* Reset passwords
 * Investigated account lockouts
 * Validated password policy enforcement
+
+### Evidence
+
+User administration screenshots are located within:
+
+```text
+04_User_Management/screenshots/
+```
 
 ---
 
@@ -139,25 +146,41 @@ Group Policy Objects were created and linked to Organizational Units to centrall
 
 * Created Group Policy Objects
 * Configured logon message settings
-* Linked policies to Organizational Units
+* Linked GPOs to Organizational Units
 * Validated policy deployment
+
+### Evidence
+
+Group Policy screenshots are located within:
+
+```text
+05_GPO_Basics/screenshots/
+```
 
 ---
 
 ## Phase 6 – Validation and Testing
 
-The environment was validated through DNS testing, authentication testing, domain joins, connectivity testing, Group Policy verification, and security validation.
+The environment was validated through authentication testing, DNS testing, domain joins, Group Policy verification, and security validation.
 
 ### Validation Activities
 
-* Domain join testing
-* DNS validation
-* Client authentication testing
-* Group Policy verification
-* GPUpdate testing
+* Domain join validation
+* DNS verification
+* Authentication testing
 * GPResult validation
-* Event Viewer review
+* GPUpdate validation
+* Event Viewer verification
+* Security validation
 * Final access validation
+
+### Evidence
+
+Validation screenshots are located within:
+
+```text
+99_Proof_and_Validation/screenshots/
+```
 
 ---
 
