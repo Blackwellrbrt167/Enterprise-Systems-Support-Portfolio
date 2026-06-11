@@ -218,14 +218,3 @@ Verified:
 
 ---
 
-## Screenshot Inventory
-
-- LAB00_01_Delete_Failure_GitBash_DeviceBusy.png
-- LAB00_02_Empty_Folder_Verified_GitBash.png
-- LAB00_03_PowerShell_RemoveItem_AccessDenied.png
-- LAB00_04_ResourceMonitor_Handles_Found.png
-- LAB00_05_ResourceMonitor_Handles_Cleared.png
-- LAB00_06_GetItem_Attributes_ReadOnlyDirectoryArchive.png
-- LAB00_07_CMD_RD_Command_Success.png
-- LAB00_08_GetItem_PathNotFound_Verification.png
-- LAB00_09_Final_Repository_Verification.png
