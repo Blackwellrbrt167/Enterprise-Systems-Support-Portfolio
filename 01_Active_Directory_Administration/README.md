@@ -261,15 +261,6 @@ The environment was validated through authentication testing, DNS testing, domai
 ![Final Access Validation](99_Proof_and_Validation/screenshots/LAB01_10_Final_AccessValidation.png)
 
 *Final validation confirmed successful authentication, authorization, and policy enforcement throughout the environment.*
-*Final validation confirmed successful authentication, authorization, and policy enforcement throughout the environment.*
----
-
-## Deliverables
-
-* Screenshots
-* Documentation
-* Implementation Guides
-* Validation Evidence
 
 ---
 
@@ -308,12 +299,14 @@ The project highlighted the importance of documentation, validation, and structu
 
 ---
 
-## Next Steps
+## Career Relevance
 
-This project supports future portfolio sections:
+This project simulates common responsibilities performed by:
 
-* Enterprise Support Labs
-* Help Desk Operations
-* Networking Labs
-* osTicket Service Desk Labs
-* Enterprise Systems Administration Projects
+* Tier 1 Help Desk Technicians
+* Service Desk Analysts
+* Enterprise Support Technicians
+* Junior Systems Administrators
+* Identity and Access Management Administrators
+
+Key tasks demonstrated include user provisioning, password resets, account lockout investigation, group membership management, Group Policy administration, DNS validation, and domain authentication troubleshooting.
