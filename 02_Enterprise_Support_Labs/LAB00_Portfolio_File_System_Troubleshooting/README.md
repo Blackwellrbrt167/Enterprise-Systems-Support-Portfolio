@@ -64,7 +64,9 @@ Confirmed the directory was empty using Git Bash.
 
 **Evidence:**
 
-- LAB00_02_Empty_Folder_Verified_GitBash.png
+![Empty Folder Verification](01_Screenshots/LAB00_02_Empty_Folder_Verified_GitBash.png)
+
+*Git Bash verification confirmed the directory appeared empty prior to deletion attempts.*
 
 ---
 
@@ -80,7 +82,9 @@ Device or resource busy
 
 **Evidence:**
 
-- LAB00_01_Delete_Failure_GitBash_DeviceBusy.png
+![Git Bash Device Busy Error](01_Screenshots/LAB00_01_Delete_Failure_GitBash_DeviceBusy.png)
+
+*Initial deletion attempt failed with a "Device or resource busy" error.*
 
 ---
 
@@ -96,7 +100,9 @@ The process cannot access the file because it is being used by another process
 
 **Evidence:**
 
-- LAB00_03_PowerShell_RemoveItem_AccessDenied.png
+![PowerShell Access Denied](01_Screenshots/LAB00_03_PowerShell_RemoveItem_AccessDenied.png)
+
+*PowerShell removal attempt generated an access-related error, indicating further investigation was required.*
 
 ---
 
@@ -108,7 +114,9 @@ Initial investigation identified active handles associated with command-line pro
 
 **Evidence:**
 
-- LAB00_04_ResourceMonitor_Handles_Found.png
+![Resource Monitor Handles Found](01_Screenshots/LAB00_04_ResourceMonitor_Handles_Found.png)
+
+*Resource Monitor identified active handles associated with the target directory.*
 
 ---
 
@@ -118,7 +126,9 @@ After closing associated processes, Resource Monitor confirmed that no handles r
 
 **Evidence:**
 
-- LAB00_05_ResourceMonitor_Handles_Cleared.png
+![Resource Monitor Handles Cleared](01_Screenshots/LAB00_05_ResourceMonitor_Handles_Cleared.png)
+
+*Verification confirmed that all handles had been released from the directory.*
 
 ---
 
@@ -129,14 +139,16 @@ Used PowerShell to inspect directory properties and attributes.
 Observed:
 
 ```text
-ReadOnly
+Read Only
 Directory
 Archive
 ```
 
 **Evidence:**
 
-- LAB00_06_GetItem_Attributes_ReadOnlyDirectoryArchive.png
+![Directory Attributes Review](01_Screenshots/LAB00_06_GetItem_Attributes_ReadOnlyDirectoryArchive.png)
+
+*PowerShell attribute inspection confirmed the directory properties during troubleshooting.*
 
 ---
 
@@ -152,7 +164,9 @@ The command completed successfully.
 
 **Evidence:**
 
-- LAB00_07_CMD_RD_Command_Success.png
+![CMD RD Success](01_Screenshots/LAB00_07_CMD_RD_Command_Success.png)
+
+*Native Windows directory removal command completed successfully.*
 
 ---
 
@@ -162,10 +176,15 @@ Confirmed the folder no longer existed.
 
 **Evidence:**
 
-- LAB00_08_GetItem_PathNotFound_Verification.png
-- LAB00_09_Final_Repository_Verification.png
+![Path Not Found Verification](01_Screenshots/LAB00_08_GetItem_PathNotFound_Verification.png)
 
----
+*PowerShell verification confirmed the directory no longer existed.*
+
+![Final Repository Verification](01_Screenshots/LAB00_09_Final_Repository_Verification.png)
+
+*Final repository validation confirmed successful cleanup and preservation of repository structure.*
+
+------
 
 ## Root Cause Analysis
 
