@@ -1,56 +1,28 @@
-#*LAB01*-*Software*Installation*Failure*Investigation
+# LAB01 - Software Installation Failure Investigation
 
 
 
-##*Status
+## Status
 
 
 
-🚧*In*Progress
+🚧 In Progress
 
 
 
-##*Enterprise*Support*Operations*Series
+## Enterprise Support Operations Series
 
 
 
-##*Overview
+## Overview
 
 
 
-This*project*focuses*on*investigating*and*resolving*a*failed*software*installation*within*a*Windows*enterprise*environment.
+This project focuses on investigating and resolving a failed software installation within a Windows enterprise environment.
 
 
 
-The*objective*is*to*follow*a*structured*troubleshooting*methodology*rather*than*relying*on*assumptions.*Evidence*collection,*installer*logging,*Event*Viewer*analysis,*dependency*validation,*remediation,*and*post-installation*verification*are*all*part*of*the*investigation*process.
-
-
-
----
-
-
-
-##*Project*Objectives
-
-
-
-**Establish*a*baseline*system*state
-
-**Reproduce*the*installation*failure
-
-**Generate*installer*logs
-
-**Review*Event*Viewer*evidence
-
-**Identify*missing*prerequisites*or*dependencies
-
-**Validate*permissions*and*execution*context
-
-**Remediate*the*root*cause
-
-**Verify*successful*installation
-
-**Document*the*incident*through*ticketing*procedures
+The objective is to follow a structured troubleshooting methodology rather than relying on assumptions. Evidence collection, installer logging, Event Viewer analysis, dependency validation, remediation, and post-installation verification are all part of the investigation process.
 
 
 
@@ -58,47 +30,27 @@ The*objective*is*to*follow*a*structured*troubleshooting*methodology*rather*than*
 
 
 
-##*Current*Progress
+## Project Objectives
 
 
 
-###*Completed
+- Establish a baseline system state
 
+- Reproduce the installation failure
 
+- Generate installer logs
 
-**Lab*environment*preparation
+- Review Event Viewer evidence
 
-**Folder*structure*creation
+- Identify missing prerequisites or dependencies
 
-**Programs*and*Features*baseline*validation
+- Validate permissions and execution context
 
-**System*Information*baseline*validation
+- Remediate the root cause
 
-**Initial*ticket*documentation
+- Verify successful installation
 
-
-
-###*Remaining
-
-
-
-**Installation*failure*reproduction
-
-**MSI*installer*logging
-
-**Event*Viewer*analysis
-
-**Dependency*investigation
-
-**Root*cause*identification
-
-**Remediation
-
-**Successful*installation*validation
-
-**Final*ticket*closure*documentation
-
-**Portfolio*reflection
+- Document the incident through ticketing procedures
 
 
 
@@ -106,7 +58,55 @@ The*objective*is*to*follow*a*structured*troubleshooting*methodology*rather*than*
 
 
 
-##*Folder*Structure
+## Current Progress
+
+
+
+### Completed
+
+
+
+- Lab environment preparation
+
+- Folder structure creation
+
+- Programs and Features baseline validation
+
+- System Information baseline validation
+
+- Initial ticket documentation
+
+
+
+### Remaining
+
+
+
+- Installation failure reproduction
+
+- MSI installer logging
+
+- Event Viewer analysis
+
+- Dependency investigation
+
+- Root cause identification
+
+- Remediation
+
+- Successful installation validation
+
+- Final ticket closure documentation
+
+- Portfolio reflection
+
+
+
+---
+
+
+
+## Folder Structure
 
 
 
@@ -116,15 +116,15 @@ LAB02_Software_Install_Failure
 
 │
 
-├──*01_Screenshots
+├── 01_Screenshots
 
-├──*02_Installer
+├── 02_Installer
 
-├──*03_Logs
+├── 03_Logs
 
-├──*04_Ticket_Notes
+├── 04_Ticket_Notes
 
-└──*05_Research_Notes
+└── 05_Research_Notes
 
 ```
 
@@ -134,51 +134,23 @@ LAB02_Software_Install_Failure
 
 
 
-##*Project*Status*Notes
+## Project Status Notes
 
 
 
-This*project*was*temporarily*paused*following*an*unexpected*Secure*Boot*and*BitLocker*recovery*incident*affecting*the*lab*environment.
+This project was temporarily paused following an unexpected Secure Boot and BitLocker recovery incident affecting the lab environment.
 
 
 
-The*incident*required*a*separate*investigation*and*ultimately*became:
+The incident required a separate investigation and ultimately became:
 
 
 
-**LAB03 – Secure Boot & BitLocker Incident Response**
+--LAB03 – Secure Boot \& BitLocker Incident Response--
 
 
 
-LAB02*will*be*resumed*and*completed*as*part*of*the*Enterprise*Support*Operations*learning*path.
-
-
-
----
-
-
-
-##*Skills*Being*Developed
-
-
-
-**Software*Deployment*Troubleshooting
-
-**Windows*Administration
-
-**Event*Viewer*Analysis
-
-**MSI*Logging
-
-**Dependency*Analysis
-
-**Root*Cause*Analysis
-
-**Ticket*Documentation
-
-**Enterprise*Support*Operations
-
-**Evidence-Based*Troubleshooting
+LAB02 will be resumed and completed as part of the Enterprise Support Operations learning path.
 
 
 
@@ -186,11 +158,39 @@ LAB02*will*be*resumed*and*completed*as*part*of*the*Enterprise*Support*Operations
 
 
 
-##*Planned*Outcome
+## Skills Being Developed
 
 
 
-Upon*completion,*this*project*will*demonstrate*the*ability*to*investigate,*document,*remediate,*and*validate*a*software*installation*failure*using*enterprise*support*methodologies*and*evidence*collection*practices.
+- Software Deployment Troubleshooting
+
+- Windows Administration
+
+- Event Viewer Analysis
+
+- MSI Logging
+
+- Dependency Analysis
+
+- Root Cause Analysis
+
+- Ticket Documentation
+
+- Enterprise Support Operations
+
+- Evidence-Based Troubleshooting
+
+
+
+---
+
+
+
+## Planned Outcome
+
+
+
+Upon completion, this project will demonstrate the ability to investigate, document, remediate, and validate a software installation failure using enterprise support methodologies and evidence collection practices.
 
 
 
