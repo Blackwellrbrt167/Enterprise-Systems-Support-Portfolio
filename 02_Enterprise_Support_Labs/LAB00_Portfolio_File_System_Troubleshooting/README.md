@@ -234,6 +234,38 @@ Verified:
 3. Git Bash, PowerShell, and native Windows commands may behave differently.
 4. Verification is just as important as remediation.
 5. Evidence-based troubleshooting prevents unnecessary assumptions.
+## Findings and Root Cause Analysis
 
+### Root Cause
+
+The folder was not truly available for deletion despite appearing empty within File Explorer, Git Bash, and PowerShell.
+
+Investigation using Windows Resource Monitor identified active process handles associated with the directory. These handles prevented normal deletion operations and generated inconsistent error messages across multiple administrative tools.
+
+The issue was further complicated by differing behavior between Git Bash, PowerShell, and native Windows command-line utilities. While Git Bash reported a "Device or resource busy" error and PowerShell generated access-related errors, the native Windows directory removal utility successfully processed the deletion request.
+
+### Contributing Factors
+
+- Active process handles attached to the directory
+- Inconsistent error reporting across administrative tools
+- Directory appeared empty despite being actively referenced by the operating system
+- Initial troubleshooting assumptions did not reveal the underlying handle dependency
+
+### Resolution
+
+After identifying and clearing active handles, the directory was removed using the native Windows removal command:
+
+```cmd
+cmd /c rd /s /q "Windows-SecureBoot-BitLocker-Incident-Response"
+```
+
+### Validation
+
+The resolution was validated through multiple verification methods:
+
+- Confirmed the directory no longer existed
+- Verified PowerShell returned a "Path Not Found" result
+- Confirmed repository integrity after cleanup
+- Verified portfolio restructuring completed successfully without affecting other project files
 ---
 
