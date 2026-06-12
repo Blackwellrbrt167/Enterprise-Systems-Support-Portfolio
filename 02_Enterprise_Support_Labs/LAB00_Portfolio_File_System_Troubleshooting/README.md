@@ -186,34 +186,6 @@ Confirmed the folder no longer existed.
 
 ------
 
-## Root Cause Analysis
-
-### Root Cause
-
-The directory was initially held open by active command-line processes.
-
-Even after the handles were released, standard Git Bash and PowerShell removal methods were unsuccessful.
-
-The native Windows directory removal utility successfully removed the folder.
-
-### Resolution
-
-Removed the directory using:
-
-```cmd
-cmd /c rd /s /q "Windows-SecureBoot-BitLocker-Incident-Response"
-```
-
-### Validation
-
-Verified:
-
-- Directory no longer existed
-- Repository structure remained intact
-- Portfolio cleanup completed successfully
-
----
-
 ## Skills Demonstrated
 
 - Windows File System Troubleshooting
