@@ -2,11 +2,11 @@
 
 
 
-\## Enterprise Systems Support Portfolio
+## Enterprise Systems Support Portfolio
 
 
 
-\## Executive Summary
+## Executive Summary
 
 
 
@@ -22,329 +22,241 @@ The incident was investigated using BIOS/UEFI configuration review, BitLocker va
 
 
 
-\---
+---
 
 
 
-\## Skills Demonstrated
+## Skills Demonstrated
 
 
 
-\* Secure Boot Validation
+- Secure Boot Validation
 
-\* BitLocker Recovery
+- BitLocker Recovery
 
-\* TPM Verification
+- TPM Verification
 
-\* BIOS/UEFI Troubleshooting
+- BIOS/UEFI Troubleshooting
 
-\* Windows Security Administration
+- Windows Security Administration
 
-\* SFC Integrity Validation
+- SFC Integrity Validation
 
-\* DISM Component Store Repair
+- DISM Component Store Repair
 
-\* Incident Documentation
+- Incident Documentation
 
-\* Root Cause Analysis
+- Root Cause Analysis
 
-\* Command-Line Administration
-
-
-
-\---
+- Command-Line Administration
 
 
 
-\## Environment
+---
 
 
 
-\### Hardware
+## Environment
 
 
 
-\* MSI Laptop
-
-\* UEFI Firmware
-
-\* TPM Enabled
-
-\* Internal SSD
+### Hardware
 
 
 
-\### Operating System
+- MSI Laptop
+
+- UEFI Firmware
+
+- TPM Enabled
+
+- Internal SSD
 
 
 
-\* Windows 11
+### Operating System
 
 
 
-\### Security Technologies
+- Windows 11
 
 
 
-\* Secure Boot
-
-\* TPM
-
-\* BitLocker Drive Encryption
-
-\* Windows Defender
+### Security Technologies
 
 
 
-\---
+- Secure Boot
+
+- TPM
+
+- BitLocker Drive Encryption
+
+- Windows Defender
 
 
 
-\## Incident Description
+---
 
 
 
-\### Initial Symptoms
+## Incident Description
 
-
+### Initial Symptoms
 
 Following an unexpected battery shutdown, the system failed to boot normally and displayed:
 
-
-
 > Secure Boot Violation
-
 > Invalid signature detected. Check Secure Boot Policy in Setup.
-
-
 
 After Secure Boot configuration review, the system proceeded to a BitLocker recovery screen requiring a recovery key before the operating system could load.
 
+### Evidence
 
+![Secure Boot Violation](Screenshots/01-SecureBoot-Violation-Error.png)
 
-\---
+*Secure Boot violation displayed during startup following the unexpected shutdown.*
 
+---
 
+## Investigation Timeline
 
-\## Investigation Timeline
-
-
-
-\### Phase 1 – Secure Boot Violation
-
-
+### Phase 1 – Secure Boot Validation
 
 Observed Secure Boot error during startup.
 
+#### Evidence
 
+![Secure Boot Enabled](Screenshots/02-BIOS-SecureBoot-Enabled.png)
 
-\#### Evidence
+*Secure Boot settings reviewed and confirmed enabled within BIOS.*
 
+---
 
-
-\* Screenshot 01 – Secure Boot Violation Error
-
-\* Screenshot 02 – Secure Boot Enabled in BIOS
-
-
-
-\---
-
-
-
-\### Phase 2 – BIOS and UEFI Review
-
-
+### Phase 2 – BIOS and UEFI Review
 
 Verified:
 
+* Secure Boot Enabled
+* Secure Boot Active
+* Secure Boot Mode = Standard
+* UEFI Boot Mode Enabled
+* Windows Boot Manager Present
 
+#### Evidence
 
-\* Secure Boot Enabled
+![BIOS Boot Configuration](Screenshots/04-BIOS-Boot-Configuration.png)
 
-\* Secure Boot Active
+*BIOS boot configuration reviewed during troubleshooting.*
 
-\* Secure Boot Mode = Standard
+![UEFI BBS Priorities](Screenshots/05-UEFI-BBS-Priorities.png)
 
-\* UEFI Boot Mode Enabled
+*UEFI boot priorities validated to ensure proper boot sequence.*
 
-\* Windows Boot Manager Present
+---
 
+### Phase 3 – BitLocker Recovery
 
-
-\#### Evidence
-
-
-
-\* Screenshot 04 – BIOS Boot Configuration
-
-\* Screenshot 05 – UEFI BBS Priorities
-
-
-
-\---
-
-
-
-\### Phase 3 – BitLocker Recovery
-
-
-
-System requested BitLocker recovery key.
-
-
+System requested a BitLocker recovery key.
 
 Recovery key was retrieved from the Microsoft Account backup and successfully entered.
 
-
-
 Windows booted normally.
 
+#### Evidence
 
+![BitLocker Recovery Screen](Screenshots/03-BitLocker-Recovery-Screen.png)
 
-\#### Evidence
+*BitLocker recovery prompt displayed after Secure Boot validation.*
 
+---
 
-
-\* Screenshot 03 – BitLocker Recovery Screen
-
-
-
-\---
-
-
-
-\### Phase 4 – BitLocker Validation
-
-
+### Phase 4 – BitLocker Validation
 
 Verified encryption status using:
 
-
-
 ```powershell
-
 manage-bde -status
-
 ```
-
-
 
 Results confirmed:
 
+* Encryption Active
+* Protection On
+* TPM Present
+* Volume Encrypted
+* Drive Successfully Unlocked
 
+#### Evidence
 
-\* Encryption Active
+![BitLocker Status Verification](Screenshots/06-BitLocker-Status-Verification.png)
 
-\* Protection On
+*BitLocker encryption status validated after system recovery.*
 
-\* TPM Present
+---
 
-\* Volume Encrypted
-
-\* Drive Successfully Unlocked
-
-
-
-\#### Evidence
-
-
-
-\* Screenshot 06 – BitLocker Status Verification
-
-
-
-\---
-
-
-
-\### Phase 5 – BitLocker Protector Verification
-
-
+### Phase 5 – BitLocker Protector Verification
 
 Verified recovery protectors using:
 
-
-
 ```powershell
-
 manage-bde -protectors -get C:
-
 ```
-
-
 
 Confirmed:
 
+* TPM Protector Present
+* Recovery Password Present
+* Recovery Key Backed Up to Microsoft Account
 
+#### Evidence
 
-\* TPM Protector Present
+![BitLocker Key Protectors](Screenshots/07-BitLocker-Key-Protectors.png)
 
-\* Recovery Password Present
+*BitLocker recovery protector configuration validated.*
 
-\* Recovery Key Backed Up to Microsoft Account
+---
 
-
-
-\#### Evidence
-
-
-
-\* Screenshot 07 – BitLocker Key Protectors
-
-
-
-\---
-
-
-
-\### Phase 6 – Windows Integrity Verification
-
-
+### Phase 6 – Windows Integrity Verification
 
 Executed:
 
-
-
 ```powershell
-
 sfc /scannow
-
 ```
-
-
 
 Result:
 
-
-
 > Windows Resource Protection did not find any integrity violations.
 
+#### Evidence
 
+![SFC System Integrity Check](Screenshots/08-SFC-System-Integrity-Check.png)
 
-\#### Evidence
+*System File Checker completed successfully with no integrity violations detected.*
 
+---
 
-
-\* Screenshot 08 – SFC System Integrity Check
-
-
-
-\---
-
-
-
-\### Phase 7 – Component Store Verification
-
-
+### Phase 7 – Component Store Verification
 
 Executed:
 
-
-
 ```powershell
-
 DISM /Online /Cleanup-Image /RestoreHealth
+```
+
+Result:
+
+> The restore operation completed successfully.
+
+#### Evidence
+
+![DISM Component Store Validation](Screenshots/09-DISM-Component-Store-Validation.png)
+
+*DISM validation confirmed Windows component store health and recovery readiness.*
+
+---
+
 
 ```
 
@@ -358,23 +270,23 @@ Result:
 
 
 
-\#### Evidence
+#### Evidence
 
 
 
-\* Screenshot 09 – DISM Component Store Validation
+- Screenshot 09 – DISM Component Store Validation
 
 
 
-\---
+---
 
 
 
-\## Root Cause Analysis
+## Root Cause Analysis
 
 
 
-\### Most Probable Cause
+### Most Probable Cause
 
 
 
@@ -386,15 +298,15 @@ No evidence was found indicating:
 
 
 
-\* Malware
+- Malware
 
-\* Bootkit Activity
+- Bootkit Activity
 
-\* Disk Corruption
+- Disk Corruption
 
-\* File System Corruption
+- File System Corruption
 
-\* Operating System Damage
+- Operating System Damage
 
 
 
@@ -402,15 +314,15 @@ System integrity checks completed successfully.
 
 
 
-\---
+---
 
 
 
-\## Commands Executed
+## Commands Executed
 
 
 
-\### BitLocker Status Verification
+### BitLocker Status Verification
 
 
 
@@ -422,7 +334,7 @@ manage-bde -status
 
 
 
-\### BitLocker Protector Verification
+### BitLocker Protector Verification
 
 
 
@@ -434,7 +346,7 @@ manage-bde -protectors -get C:
 
 
 
-\### System File Verification
+### System File Verification
 
 
 
@@ -446,7 +358,7 @@ sfc /scannow
 
 
 
-\### Component Store Verification
+### Component Store Verification
 
 
 
@@ -458,11 +370,11 @@ DISM /Online /Cleanup-Image /RestoreHealth
 
 
 
-\---
+---
 
 
 
-\## Resolution
+## Resolution
 
 
 
@@ -478,11 +390,11 @@ The system returned to normal operation without requiring reinstallation or data
 
 
 
-\---
+---
 
 
 
-\## Lessons Learned
+## Lessons Learned
 
 
 
@@ -498,11 +410,11 @@ The system returned to normal operation without requiring reinstallation or data
 
 
 
-\---
+---
 
 
 
-\## Portfolio Reflection
+## Portfolio Reflection
 
 
 
@@ -518,15 +430,15 @@ Most importantly, this project showed that effective troubleshooting requires mo
 
 
 
-\---
+---
 
 
 
-\## Incident Summary (STAR Format)
+## Incident Summary (STAR Format)
 
 
 
-\### Situation
+### Situation
 
 
 
@@ -534,7 +446,7 @@ A Windows laptop experienced an unexpected battery shutdown and subsequently dis
 
 
 
-\### Task
+### Task
 
 
 
@@ -542,7 +454,7 @@ Determine whether the issue represented corruption, security compromise, or a no
 
 
 
-\### Action
+### Action
 
 
 
@@ -550,7 +462,7 @@ Reviewed BIOS configuration, validated Secure Boot, recovered the system using t
 
 
 
-\### Result
+### Result
 
 
 
