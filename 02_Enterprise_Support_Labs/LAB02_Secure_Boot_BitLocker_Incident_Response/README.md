@@ -97,9 +97,6 @@ The incident was investigated using BIOS/UEFI configuration review, BitLocker va
 
 
 ---
-
-
-
 ## Incident Description
 
 ### Initial Symptoms
@@ -111,7 +108,7 @@ Following an unexpected battery shutdown, the system failed to boot normally and
 
 After Secure Boot configuration review, the system proceeded to a BitLocker recovery screen requiring a recovery key before the operating system could load.
 
-### Evidence
+#### Evidence
 
 ![Secure Boot Violation](Screenshots/01-SecureBoot-Violation-Error.png)
 
@@ -256,25 +253,6 @@ Result:
 *DISM validation confirmed Windows component store health and recovery readiness.*
 
 ---
-
-
-```
-
-
-
-Result:
-
-
-
-> The restore operation completed successfully.
-
-
-
-#### Evidence
-
-
-
-- Screenshot 09 – DISM Component Store Validation
 
 
 
