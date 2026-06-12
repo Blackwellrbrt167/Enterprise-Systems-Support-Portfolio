@@ -188,7 +188,7 @@ Results confirmed:
 
 ![BitLocker Status Verification](Screenshots/06-BitLocker-Status-Verification.png)
 
-*BitLocker encryption status validated after system recovery.*
+*BitLocker encryption status validated after successful recovery.*
 
 ---
 
@@ -210,7 +210,7 @@ Confirmed:
 
 ![BitLocker Key Protectors](Screenshots/07-BitLocker-Key-Protectors.png)
 
-*BitLocker recovery protector configuration validated.*
+*Recovery password and TPM protectors verified.*
 
 ---
 
@@ -241,6 +241,18 @@ Executed:
 ```powershell
 DISM /Online /Cleanup-Image /RestoreHealth
 ```
+
+Result:
+
+> The restore operation completed successfully.
+
+#### Evidence
+
+![DISM Component Store Validation](Screenshots/09-DISM-Component-Store-Validation.png)
+
+*DISM validation confirmed Windows component store health and recovery readiness.*
+
+---
 
 Result:
 
