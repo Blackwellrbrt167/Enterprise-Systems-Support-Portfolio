@@ -117,37 +117,8 @@ The objective is to determine whether the failure is caused by:
 ### Troubleshooting Performed
 
 ### Root Cause
-## Expanded Investigation
-
-During troubleshooting, it was determined that the software installation issue extended beyond simple user permissions.
-
-A dedicated Active Directory security group was created and assigned to the target user account to provide the administrative permissions required for software installation testing. However, the expected permissions were not being applied to the client workstation.
-
-Further investigation revealed multiple infrastructure-related issues affecting communication between the client workstation and the Domain Controller, including:
-
-* Virtual network configuration issues
-* APIPA address assignment
-* Static IP configuration requirements
-* DNS resolution failures
-* Domain Controller discovery validation
-* Group Policy processing verification
-
-These issues prevented Active Directory changes from properly reaching the client workstation and directly impacted the software installation troubleshooting process.
-
-A full breakdown of the investigation, remediation steps, validation testing, and supporting screenshots has been documented separately in:
-
-**05_Auxiliary_Troubleshooting**
-
-The investigation concluded with successful restoration of domain communication, validation of Active Directory group memberships, successful Group Policy processing, and confirmation of user permissions.
 
 ### Resolution
-### Related Investigation
-
-See:
-
-`05_Auxiliary_Troubleshooting/README.md`
-
-for the complete Active Directory, DNS, networking, and Group Policy troubleshooting process that was required before software installation testing could continue.
 
 ### Escalation Decision
 
