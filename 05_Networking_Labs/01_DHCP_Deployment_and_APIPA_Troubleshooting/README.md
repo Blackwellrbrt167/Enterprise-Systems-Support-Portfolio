@@ -30,20 +30,93 @@ The client workstation was initially configured with a static IP address after a
 
 ## Screenshots
 
-| Screenshot | Description |
-|---|---|
-| 01_IPConfig_Current_Configuration.png | Initial client IP configuration |
-| 02_IPConfig_All_Details.png | Detailed adapter configuration |
-| 03_IPConfig_Release_Address.png | Released IP configuration |
-| 04_IPConfig_Renew_Address.png | Renewed DHCP lease |
-| 05_Connectivity_Ping_Tests.png | Connectivity validation |
-| 06_Network_Adapter_Disabled.png | Simulated adapter/network issue |
-| 07_APIPA_Address_Assigned.png | APIPA address after DHCP failure |
-| 08_DHCP_Scope_Created.png | DHCP scope created |
-| 09_DHCP_Address_Pool.png | DHCP address pool configured |
-| 10_DHCP_Scope_Options.png | DNS and domain options configured |
-| 11_DHCP_Address_Lease.png | Client lease issued by DHCP server |
+# Screenshot Evidence
 
+## Screenshot 01 – Initial IP Configuration
+
+![Initial IP Configuration](Screenshots/01_IPConfig_Current_Configuration.png)
+
+Shows the workstation's initial network configuration before troubleshooting.
+
+---
+
+## Screenshot 02 – Detailed Adapter Information
+
+![IPConfig All](Screenshots/02_IPConfig_All_Details.png)
+
+Displays detailed adapter information including DNS, DHCP, MAC address, and lease information.
+
+---
+
+## Screenshot 03 – Release DHCP Lease
+
+![Release Address](Screenshots/03_IPConfig_Release_Address.png)
+
+Demonstrates releasing the current IP address assignment.
+
+---
+
+## Screenshot 04 – Renew DHCP Lease
+
+![Renew Address](Screenshots/04_IPConfig_Renew_Address.png)
+
+Demonstrates requesting a new DHCP lease from the DHCP server.
+
+---
+
+## Screenshot 05 – Connectivity Validation
+
+![Ping Tests](Screenshots/05_Connectivity_Ping_Tests.png)
+
+Validates TCP/IP functionality, local connectivity, Domain Controller connectivity, internet access, and DNS resolution.
+
+---
+
+## Screenshot 06 – Network Adapter Disabled
+
+![Adapter Disabled](Screenshots/06_Network_Adapter_Disabled.png)
+
+Simulates loss of connectivity to the enterprise network.
+
+---
+
+## Screenshot 07 – APIPA Address Assignment
+
+![APIPA](Screenshots/07_APIPA_Address_Assigned.png)
+
+Shows APIPA addressing after DHCP services became unavailable.
+
+---
+
+## Screenshot 08 – DHCP Scope Created
+
+![DHCP Scope](Screenshots/08_DHCP_Scope_Created.png)
+
+Demonstrates successful creation and activation of the DHCP scope.
+
+---
+
+## Screenshot 09 – DHCP Address Pool
+
+![Address Pool](Screenshots/09_DHCP_Address_Pool.png)
+
+Displays the configured DHCP address pool for client workstations.
+
+---
+
+## Screenshot 10 – DHCP Scope Options
+
+![Scope Options](Screenshots/10_DHCP_Scope_Options.png)
+
+Shows DNS server and domain options configured within DHCP.
+
+---
+
+## Screenshot 11 – DHCP Address Lease
+
+![Address Lease](Screenshots/11_DHCP_Address_Lease.png)
+
+Validates successful lease assignment to the domain-joined workstation.
 ## Root Cause Analysis
 
 The original issue was caused by the lack of a DHCP service on the Active Directory lab network. The workstation could not automatically receive a valid IP address and fell back to APIPA addressing. A temporary static IP address restored connectivity, but the underlying issue required DHCP deployment.
