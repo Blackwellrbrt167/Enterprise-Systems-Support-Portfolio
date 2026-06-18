@@ -322,13 +322,27 @@ Through completion of this lab, I demonstrated the ability to:
 
 
 
-\## Related Research
+\## Why This Matters
 
 
 
-\* \[CVE-2023-20198 Case Study](Research/CVE\_2023\_20198\_Case\_Study.md)
+This research reinforced that DHCP is not simply a service that automatically assigns IP addresses to devices. DHCP is a foundational network service that supports workstation connectivity, DNS resolution, Active Directory communication, access to file shares, printers, and internet resources.
 
 
 
-This research explores how compromised network infrastructure can impact DHCP operations through DHCP spoofing, DHCP starvation, DNS manipulation, and infrastructure mapping attacks.
+During this lab, I configured a DHCP server, created a scope, validated lease assignment, and intentionally simulated DHCP failure to observe APIPA addressing behavior. This helped me understand what happens when clients are unable to communicate with a DHCP server.
+
+
+
+The Cisco IOS XE compromise demonstrates that attackers do not always target DHCP directly. Instead, they often target the network infrastructure that supports critical services. Once network devices are compromised, attackers may be able to perform DHCP spoofing, DHCP starvation, DNS manipulation, or infrastructure mapping attacks that impact the availability and integrity of network services.
+
+
+
+For school systems and enterprise environments, a successful attack against network infrastructure could prevent students, teachers, staff, or business users from accessing the resources they need to perform daily operations. Understanding how DHCP works, how it fails, and how it can be abused helps administrators troubleshoot problems more effectively and implement defensive controls such as DHCP snooping, port security, network segmentation, and proper patch management.
+
+
+
+This case study helped connect the technical tasks performed in this lab to a real-world cybersecurity incident and reinforced the importance of securing the infrastructure that supports enterprise network services.
+
+
 
