@@ -1,0 +1,290 @@
+\# Real-World Case Study: CVE-2023-20198 and DHCP Infrastructure Risk
+
+
+
+\## Overview
+
+
+
+As part of this DHCP deployment and troubleshooting lab, I researched CVE-2023-20198, a critical vulnerability affecting Cisco IOS XE software. This vulnerability was exploited in the wild and demonstrated how a compromise of core network infrastructure can affect critical services such as DHCP, DNS, routing, and overall network availability.
+
+
+
+Reference:
+
+
+
+https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-iosxe-webui-privesc-j22SaA4z
+
+
+
+\---
+
+
+
+\## Vulnerability Description
+
+
+
+CVE-2023-20198 is a zero-day privilege escalation and authentication bypass vulnerability found within the web user interface of Cisco IOS XE software.
+
+
+
+The vulnerability allowed unauthorized attackers to gain access to network devices exposed to the internet. Attackers were able to create highly privileged administrator accounts and take control of affected devices. Once access was obtained, attackers could deploy additional malicious software and establish persistence within the network.
+
+
+
+\---
+
+
+
+\## Attack Path
+
+
+
+\### Initial Access
+
+
+
+The attack leveraged a path validation flaw within the Cisco IOS XE web interface. The system failed to properly verify a file or URL path, allowing unauthorized access.
+
+
+
+\### Privilege Escalation
+
+
+
+Attackers injected commands that created privileged administrator accounts on affected devices.
+
+
+
+\### Device Takeover
+
+
+
+The attacker-created account could then be used to exploit CVE-2023-20273, a command injection vulnerability that allowed authenticated attackers to execute arbitrary operating system commands.
+
+
+
+This resulted in:
+
+
+
+\* Full device compromise
+
+\* Root-level access
+
+\* Installation of malicious implants
+
+\* Persistent backdoor access
+
+
+
+\---
+
+
+
+\## Remediation
+
+
+
+Cisco recommended the following actions:
+
+
+
+\* Apply available software updates and security patches.
+
+\* Disable the web user interface when patching is not immediately possible.
+
+\* Restrict management interfaces to trusted networks.
+
+\* Prevent public internet exposure of management services.
+
+\* Continuously monitor network devices for unauthorized administrator accounts.
+
+
+
+\---
+
+
+
+\## Impact on DHCP Services
+
+
+
+A compromised network device could directly affect DHCP operations.
+
+
+
+\### DHCP Spoofing
+
+
+
+An attacker could configure a rogue DHCP server on a compromised device.
+
+
+
+The rogue DHCP server could:
+
+
+
+\* Assign incorrect IP addresses
+
+\* Provide a malicious default gateway
+
+\* Redirect DNS traffic
+
+\* Intercept user communications
+
+\* Perform man-in-the-middle attacks
+
+
+
+\### DHCP Starvation
+
+
+
+An attacker could flood the legitimate DHCP server with thousands of fake MAC address requests.
+
+
+
+Potential impacts include:
+
+
+
+\* Exhaustion of available leases
+
+\* Denial of service
+
+\* New devices unable to connect to the network
+
+\* Classroom or office systems losing connectivity
+
+
+
+\### DNS Redirection
+
+
+
+An attacker could modify DHCP options to provide malicious DNS servers.
+
+
+
+This could result in:
+
+
+
+\* Phishing attacks
+
+\* Traffic interception
+
+\* User credential theft
+
+\* Redirection to malicious websites
+
+
+
+\### Infrastructure Mapping
+
+
+
+By accessing DHCP lease tables, an attacker could identify:
+
+
+
+\* Hostnames
+
+\* IP addresses
+
+\* Device inventory
+
+\* Network layout
+
+
+
+This information could be used to plan additional attacks against the environment.
+
+
+
+\---
+
+
+
+\## Defensive Measures
+
+
+
+\### DHCP Snooping
+
+
+
+DHCP snooping can be enabled on managed switches to distinguish trusted DHCP servers from unauthorized DHCP servers.
+
+
+
+Benefits:
+
+
+
+\* Blocks rogue DHCP advertisements
+
+\* Prevents DHCP spoofing attacks
+
+\* Helps maintain DHCP integrity
+
+
+
+\### Port Security
+
+
+
+Port security limits the number of MAC addresses allowed on a switch port.
+
+
+
+Benefits:
+
+
+
+\* Helps prevent DHCP starvation attacks
+
+\* Limits unauthorized devices
+
+\* Reduces attack surface
+
+
+
+\### Network Segmentation
+
+
+
+Critical infrastructure should be isolated from user networks.
+
+
+
+Benefits:
+
+
+
+\* Limits attacker movement
+
+\* Contains rogue DHCP broadcasts
+
+\* Protects management interfaces
+
+\* Reduces overall network risk
+
+
+
+\---
+
+
+
+\## Lessons Learned
+
+
+
+This research reinforced the importance of protecting core network infrastructure. While DHCP is designed to automatically provide IP addressing to devices, a compromise of network equipment can allow attackers to manipulate or disrupt DHCP services entirely. Proper patch management, network segmentation, DHCP snooping, and port security are critical controls that help maintain the availability and integrity of enterprise network services.
+
+
+
