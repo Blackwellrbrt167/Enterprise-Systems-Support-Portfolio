@@ -1,5 +1,19 @@
 # Lab 01 – DHCP Deployment and APIPA Troubleshooting
 
+## Lab Outcomes
+
+Installed and configured Windows Server DHCP
+
+Created and activated a DHCP scope
+
+Configured DNS integration
+
+Migrated a workstation from static addressing to DHCP
+
+Simulated DHCP failure and APIPA assignment
+
+Restored DHCP services and validated lease assignment
+
 ## Scenario
 
 A workstation in the Lab.Local Active Directory environment experienced network connectivity issues and originally received an APIPA address. The goal of this lab was to investigate the issue, deploy DHCP on the Domain Controller, configure a DHCP scope, and validate dynamic IP address assignment.
