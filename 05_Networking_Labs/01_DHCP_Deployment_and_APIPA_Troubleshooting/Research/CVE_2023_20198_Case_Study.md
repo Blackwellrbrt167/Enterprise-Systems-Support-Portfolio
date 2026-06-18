@@ -1,8 +1,8 @@
-\# Real-World Case Study: CVE-2023-20198 and DHCP Infrastructure Risk
+# Real-World Case Study: CVE-2023-20198 and DHCP Infrastructure Risk
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -22,7 +22,7 @@ https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/ci
 
 
 
-\## Vulnerability Description
+## Vulnerability Description
 
 
 
@@ -38,11 +38,11 @@ The vulnerability allowed unauthorized attackers to gain access to network devic
 
 
 
-\## Attack Path
+## Attack Path
 
 
 
-\### Initial Access
+### Initial Access
 
 
 
@@ -50,7 +50,7 @@ The attack leveraged a path validation flaw within the Cisco IOS XE web interfac
 
 
 
-\### Privilege Escalation
+### Privilege Escalation
 
 
 
@@ -58,7 +58,7 @@ Attackers injected commands that created privileged administrator accounts on af
 
 
 
-\### Device Takeover
+### Device Takeover
 
 
 
@@ -84,7 +84,7 @@ This resulted in:
 
 
 
-\## Remediation
+## Remediation
 
 
 
@@ -126,7 +126,7 @@ Although CVE-2023-20198 does not directly target DHCP, it demonstrates how a com
 
 The concepts practiced in this lab relate directly to the following attack scenarios:
 
-\### DHCP Spoofing
+### DHCP Spoofing
 
 
 
@@ -150,7 +150,7 @@ The rogue DHCP server could:
 
 
 
-\### DHCP Starvation
+### DHCP Starvation
 
 
 
@@ -172,7 +172,7 @@ Potential impacts include:
 
 
 
-\### DNS Redirection
+### DNS Redirection
 
 
 
@@ -194,7 +194,7 @@ This could result in:
 
 
 
-\### Infrastructure Mapping
+### Infrastructure Mapping
 
 
 
@@ -220,11 +220,11 @@ This information could be used to plan additional attacks against the environmen
 
 
 
-\## Defensive Measures
+## Defensive Measures
 
 
 
-\### DHCP Snooping
+### DHCP Snooping
 
 
 
@@ -244,7 +244,7 @@ Benefits:
 
 
 
-\### Port Security
+### Port Security
 
 
 
@@ -264,7 +264,7 @@ Benefits:
 
 
 
-\### Network Segmentation
+### Network Segmentation
 
 
 
@@ -290,7 +290,7 @@ Benefits:
 
 
 
-\## Lessons Learned
+## Lessons Learned
 
 
 
