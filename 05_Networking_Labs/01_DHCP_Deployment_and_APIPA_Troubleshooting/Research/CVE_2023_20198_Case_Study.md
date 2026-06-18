@@ -108,13 +108,23 @@ Cisco recommended the following actions:
 
 
 
-\## Impact on DHCP Services
+Relationship to Lab 01 – DHCP Deployment and APIPA Troubleshooting
 
 
 
-A compromised network device could directly affect DHCP operations.
+This case study was selected because it demonstrates how the network services configured during this lab can be affected when core network infrastructure becomes compromised.
 
 
+
+During Lab 01, I deployed and configured a Windows Server DHCP service, created a DHCP scope, configured DNS integration, validated DHCP lease assignment, and simulated DHCP failure conditions that resulted in APIPA addressing. These activities helped me understand how clients obtain network configuration information and what occurs when DHCP services become unavailable.
+
+
+
+Although CVE-2023-20198 does not directly target DHCP, it demonstrates how a compromised network device can impact the availability, integrity, and security of DHCP services.
+
+
+
+The concepts practiced in this lab relate directly to the following attack scenarios:
 
 \### DHCP Spoofing
 
@@ -285,6 +295,4 @@ Benefits:
 
 
 This research reinforced the importance of protecting core network infrastructure. While DHCP is designed to automatically provide IP addressing to devices, a compromise of network equipment can allow attackers to manipulate or disrupt DHCP services entirely. Proper patch management, network segmentation, DHCP snooping, and port security are critical controls that help maintain the availability and integrity of enterprise network services.
-
-
 
