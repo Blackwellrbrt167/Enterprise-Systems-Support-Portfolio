@@ -322,7 +322,7 @@ Through completion of this lab, I demonstrated the ability to:
 
 
 
-\## Why This Matters
+## Why This Matters
 
 
 
