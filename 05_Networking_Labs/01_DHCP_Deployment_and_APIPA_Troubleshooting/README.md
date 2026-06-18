@@ -170,3 +170,25 @@ Through completion of this lab, I demonstrated the ability to:
 * [CVE-2023-20198 Case Study](Research/CVE_2023_20198_Case_Study.md)
 
 This research explores how compromised network infrastructure can impact DHCP operations through DHCP spoofing, DHCP starvation, DNS manipulation, and infrastructure mapping attacks.
+
+## Professional Skills Demonstrated
+
+Through completion of this lab, I demonstrated the ability to:
+
+* Deploy and configure Windows Server DHCP services.
+* Create and manage DHCP scopes.
+* Configure DNS integration within an Active Directory environment.
+* Troubleshoot IP addressing issues.
+* Identify and resolve APIPA-related connectivity problems.
+* Validate DHCP lease assignment and renewal.
+* Simulate service outages and verify recovery procedures.
+* Perform root cause analysis and document findings.
+* Relate technical implementations to real-world security threats and vulnerabilities.
+
+## Related Research
+
+* [CVE-2023-20198 Case Study](Research/CVE_2023_20198_Case_Study.md)
+
+This research explores how compromised network infrastructure can impact DHCP operations through DHCP spoofing, DHCP starvation, DNS manipulation, and infrastructure mapping attacks.
+
+
