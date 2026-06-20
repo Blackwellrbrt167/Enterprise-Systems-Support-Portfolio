@@ -1,8 +1,8 @@
-\# DNS Troubleshooting Fundamentals
+# DNS Troubleshooting Fundamentals
 
 
 
-\## Lab Overview
+## Lab Overview
 
 
 
@@ -14,71 +14,71 @@ This lab was performed in a Windows Active Directory environment using Windows S
 
 
 
-\---
+---
 
 
 
-\## Environment
+## Environment
 
 
 
-\### Domain Controller
+### Domain Controller
 
 
 
-\* Windows Server 2022
+* Windows Server 2022
 
-\* Active Directory Domain Services (AD DS)
+* Active Directory Domain Services (AD DS)
 
-\* DNS Server
+* DNS Server
 
-\* DHCP Server
+* DHCP Server
 
-\* Domain: Lab.Local
+* Domain: Lab.Local
 
-\* IP Address: 192.168.10.10
-
-
-
-\### Client Workstation
+* IP Address: 192.168.10.10
 
 
 
-\* Windows Client
-
-\* Domain Joined
-
-\* DHCP Assigned Address
+### Client Workstation
 
 
 
-\---
+* Windows Client
+
+* Domain Joined
+
+* DHCP Assigned Address
 
 
 
-\## Learning Objectives
+---
 
 
 
-\* Understand the role of DNS in Active Directory environments.
-
-\* Validate hostname resolution using DNS tools.
-
-\* Identify DNS record types used in enterprise environments.
-
-\* Simulate DNS failures and observe their impact.
-
-\* Restore DNS functionality and verify successful resolution.
-
-\* Develop a structured troubleshooting methodology.
+## Learning Objectives
 
 
 
-\---
+* Understand the role of DNS in Active Directory environments.
+
+* Validate hostname resolution using DNS tools.
+
+* Identify DNS record types used in enterprise environments.
+
+* Simulate DNS failures and observe their impact.
+
+* Restore DNS functionality and verify successful resolution.
+
+* Develop a structured troubleshooting methodology.
 
 
 
-\## DNS Fundamentals
+---
+
+
+
+## DNS Fundamentals
 
 
 
@@ -86,11 +86,11 @@ DNS (Domain Name System) translates human-readable hostnames into IP addresses t
 
 
 
-\* fileserver.lab.local
+* fileserver.lab.local
 
-\* dc01.lab.local
+* dc01.lab.local
 
-\* intranet.company.local
+* intranet.company.local
 
 
 
@@ -98,11 +98,11 @@ During this lab, I validated DNS functionality and observed how hostname resolut
 
 
 
-\---
+---
 
 
 
-\## DNS Records Investigated
+## DNS Records Investigated
 
 
 
@@ -110,7 +110,7 @@ During validation, I reviewed several common DNS record types:
 
 
 
-\### A Record
+### A Record
 
 
 
@@ -118,7 +118,7 @@ Maps a hostname to an IPv4 address.
 
 
 
-\### AAAA Record
+### AAAA Record
 
 
 
@@ -126,7 +126,7 @@ Maps a hostname to an IPv6 address.
 
 
 
-\### CNAME Record
+### CNAME Record
 
 
 
@@ -134,7 +134,7 @@ Creates an alias that points one hostname to another hostname.
 
 
 
-\### PTR Record
+### PTR Record
 
 
 
@@ -142,15 +142,15 @@ Supports reverse DNS lookups by mapping IP addresses back to hostnames.
 
 
 
-\---
+---
 
 
 
-\## Troubleshooting Methodology
+## Troubleshooting Methodology
 
 
 
-\### Reported Problem
+### Reported Problem
 
 
 
@@ -162,7 +162,7 @@ A user reports:
 
 
 
-\### Investigation Process
+### Investigation Process
 
 
 
@@ -184,7 +184,7 @@ A user reports:
 
 
 
-\### Root Cause
+### Root Cause
 
 
 
@@ -192,7 +192,7 @@ The client was configured with an incorrect DNS server address, preventing succe
 
 
 
-\### Resolution
+### Resolution
 
 
 
@@ -200,11 +200,11 @@ The client DNS settings were restored to the correct Active Directory DNS server
 
 
 
-\---
+---
 
 
 
-\## Key Findings
+## Key Findings
 
 
 
@@ -220,33 +220,33 @@ This reinforced the distinction between Application Layer services and underlyin
 
 
 
-\---
+---
 
 
 
-\## Lessons Learned
+## Lessons Learned
 
 
 
-\* DNS failures do not necessarily indicate a network outage.
+* DNS failures do not necessarily indicate a network outage.
 
-\* Name resolution and network connectivity are separate services.
+* Name resolution and network connectivity are separate services.
 
-\* Devices can often communicate by IP address even when hostname resolution fails.
+* Devices can often communicate by IP address even when hostname resolution fails.
 
-\* Active Directory environments depend heavily on DNS functionality.
+* Active Directory environments depend heavily on DNS functionality.
 
-\* Structured troubleshooting significantly reduces time to resolution.
+* Structured troubleshooting significantly reduces time to resolution.
 
-\* DNS validation is a foundational Tier 1 Help Desk skill.
-
-
-
-\---
+* DNS validation is a foundational Tier 1 Help Desk skill.
 
 
 
-\## Why This Matters
+---
+
+
+
+## Why This Matters
 
 
 
@@ -262,49 +262,49 @@ Understanding how to validate DNS records, identify DNS failures, and restore se
 
 
 
-\* Help Desk Technicians
+* Help Desk Technicians
 
-\* Desktop Support Specialists
+* Desktop Support Specialists
 
-\* School District IT Staff
+* School District IT Staff
 
-\* Systems Administrators
+* Systems Administrators
 
-\* Infrastructure Support Technicians
-
-
-
-\---
+* Infrastructure Support Technicians
 
 
 
-\## Validation Checklist
+---
 
 
 
-\* DNS server configuration validated
-
-\* DNS records reviewed
-
-\* Hostname resolution tested
-
-\* DNS failure simulated
-
-\* DNS service restored
-
-\* Active Directory functionality verified
+## Validation Checklist
 
 
 
-\---
+* DNS server configuration validated
+
+* DNS records reviewed
+
+* Hostname resolution tested
+
+* DNS failure simulated
+
+* DNS service restored
+
+* Active Directory functionality verified
 
 
 
-\## Screenshots
+---
 
 
 
-\*\*Pending completion of lab execution.\*\*
+## Screenshots
+
+
+
+**Pending completion of lab execution.**
 
 
 
@@ -312,43 +312,43 @@ Screenshots will document:
 
 
 
-\* IP configuration
+* IP configuration
 
-\* DNS validation
+* DNS validation
 
-\* DNS record review
+* DNS record review
 
-\* Failure simulation
+* Failure simulation
 
-\* Service restoration
+* Service restoration
 
-\* Final validation testing
-
-
-
-\---
+* Final validation testing
 
 
 
-\## Professional Skills Demonstrated
+---
 
 
 
-\* DNS Administration
+## Professional Skills Demonstrated
 
-\* Active Directory Fundamentals
 
-\* Network Troubleshooting
 
-\* Root Cause Analysis
+* DNS Administration
 
-\* Technical Documentation
+* Active Directory Fundamentals
 
-\* Incident Resolution
+* Network Troubleshooting
 
-\* Enterprise Support Methodology
+* Root Cause Analysis
 
-\* Windows Server Administration
+* Technical Documentation
+
+* Incident Resolution
+
+* Enterprise Support Methodology
+
+* Windows Server Administration
 
 
 
