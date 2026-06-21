@@ -1,8 +1,8 @@
-\# Real-World Security Research – SIGRed (CVE-2020-1350)
+# Real-World Security Research – SIGRed (CVE-2020-1350)
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -14,7 +14,7 @@ SIGRed (CVE-2020-1350) was a critical remote code execution vulnerability affect
 
 
 
-\## 1. What Component of Windows Was Affected?
+## 1. What Component of Windows Was Affected?
 
 
 
@@ -26,7 +26,7 @@ The vulnerability affected Microsoft Windows DNS Server, a role commonly install
 
 
 
-\## 2. Why Was the Vulnerability Critical?
+## 2. Why Was the Vulnerability Critical?
 
 
 
@@ -38,13 +38,13 @@ A successful attack could allow an adversary to:
 
 
 
-\* Gain complete control of the DNS server.
+* Gain complete control of the DNS server.
 
-\* Install malware or backdoors.
+* Install malware or backdoors.
 
-\* Move laterally throughout the environment.
+* Move laterally throughout the environment.
 
-\* Potentially compromise the entire Active Directory domain.
+* Potentially compromise the entire Active Directory domain.
 
 
 
@@ -56,7 +56,7 @@ Because many organizations run DNS on Domain Controllers, exploitation could hav
 
 
 
-\## 3. How Could a Compromised DNS Server Impact a School District?
+## 3. How Could a Compromised DNS Server Impact a School District?
 
 
 
@@ -68,17 +68,17 @@ Potential impacts include:
 
 
 
-\* Redirecting users to malicious websites.
+* Redirecting users to malicious websites.
 
-\* Blocking access to educational platforms such as Canvas and Google Workspace for Education.
+* Blocking access to educational platforms such as Canvas and Google Workspace for Education.
 
-\* Preventing access to PowerSchool and other student information systems.
+* Preventing access to PowerSchool and other student information systems.
 
-\* Interrupting email communications.
+* Interrupting email communications.
 
-\* Exposing students and staff to phishing attacks.
+* Exposing students and staff to phishing attacks.
 
-\* Causing widespread outages across district technology services.
+* Causing widespread outages across district technology services.
 
 
 
@@ -90,7 +90,7 @@ Because nearly every modern educational service relies on DNS, a compromised DNS
 
 
 
-\## 4. What Services Depend on DNS?
+## 4. What Services Depend on DNS?
 
 
 
@@ -98,21 +98,21 @@ DNS supports nearly every network-connected service, including:
 
 
 
-\* Web browsing and web applications.
+* Web browsing and web applications.
 
-\* Cloud services and SaaS platforms.
+* Cloud services and SaaS platforms.
 
-\* Email delivery.
+* Email delivery.
 
-\* Email authentication technologies such as SPF, DKIM, and DMARC.
+* Email authentication technologies such as SPF, DKIM, and DMARC.
 
-\* Content Delivery Networks (CDNs).
+* Content Delivery Networks (CDNs).
 
-\* Load balancing services.
+* Load balancing services.
 
-\* Internal enterprise applications.
+* Internal enterprise applications.
 
-\* Active Directory authentication and resource discovery.
+* Active Directory authentication and resource discovery.
 
 
 
@@ -124,7 +124,7 @@ Without DNS, users may still have network connectivity but be unable to access c
 
 
 
-\## 5. What Mitigation Did Microsoft Recommend?
+## 5. What Mitigation Did Microsoft Recommend?
 
 
 
@@ -140,7 +140,7 @@ For organizations unable to immediately patch affected systems, Microsoft provid
 
 
 
-\## 6. How Would You Detect Unusual DNS Activity?
+## 6. How Would You Detect Unusual DNS Activity?
 
 
 
@@ -152,17 +152,17 @@ Indicators may include:
 
 
 
-\* Sudden spikes in DNS query volume.
+* Sudden spikes in DNS query volume.
 
-\* Large numbers of requests to unknown or suspicious domains.
+* Large numbers of requests to unknown or suspicious domains.
 
-\* Excessively long or randomly generated domain names.
+* Excessively long or randomly generated domain names.
 
-\* Abnormal DNS packet sizes.
+* Abnormal DNS packet sizes.
 
-\* Unusual volumes of TXT, NULL, or MX record requests.
+* Unusual volumes of TXT, NULL, or MX record requests.
 
-\* DNS traffic originating from unexpected hosts.
+* DNS traffic originating from unexpected hosts.
 
 
 
@@ -170,15 +170,15 @@ Detection methods include:
 
 
 
-\* Reviewing DNS server logs.
+* Reviewing DNS server logs.
 
-\* Reviewing firewall logs.
+* Reviewing firewall logs.
 
-\* Monitoring traffic with Wireshark.
+* Monitoring traffic with Wireshark.
 
-\* Using a SIEM platform to aggregate and analyze DNS events.
+* Using a SIEM platform to aggregate and analyze DNS events.
 
-\* Comparing current activity against established network baselines.
+* Comparing current activity against established network baselines.
 
 
 
@@ -186,7 +186,7 @@ Detection methods include:
 
 
 
-\# Why This Matters
+# Why This Matters
 
 
 
