@@ -1,8 +1,8 @@
-\## Current Lab Status
+## Current Lab Status
 
 
 
-\### Status: Planning and Research Complete
+### Status: Planning and Research Complete
 
 
 
@@ -14,47 +14,47 @@ The physical lab execution has not yet been performed. Validation testing, scree
 
 
 
-\### Completed
+### Completed
 
 
 
-\* Environment planning
+* Environment planning
 
-\* IPv4 addressing research
+* IPv4 addressing research
 
-\* DHCP vs Static IP research
+* DHCP vs Static IP research
 
-\* Subnetting fundamentals research
+* Subnetting fundamentals research
 
-\* Gateway functionality research
+* Gateway functionality research
 
-\* DNS and connectivity testing methodology
+* DNS and connectivity testing methodology
 
-\* Root cause analysis planning
+* Root cause analysis planning
 
-\* Real-world school district scenario analysis
-
-
-
-\### Pending
+* Real-world school district scenario analysis
 
 
 
-\* Static IP configuration
+### Pending
 
-\* Connectivity validation
 
-\* Subnetting calculations validation
 
-\* Incorrect subnet mask simulation
+* Static IP configuration
 
-\* Incorrect gateway simulation
+* Connectivity validation
 
-\* Screenshot collection
+* Subnetting calculations validation
 
-\* Final validation testing
+* Incorrect subnet mask simulation
 
-\* Real-world security research documentation
+* Incorrect gateway simulation
+
+* Screenshot collection
+
+* Final validation testing
+
+* Real-world security research documentation
 
 
 
@@ -62,7 +62,7 @@ The physical lab execution has not yet been performed. Validation testing, scree
 
 
 
-\## Real-World Scenario
+## Real-World Scenario
 
 
 
@@ -74,13 +74,13 @@ The district recently deployed several new infrastructure components including:
 
 
 
-\* Domain Controller
+* Domain Controller
 
-\* File Server
+* File Server
 
-\* Network Printer
+* Network Printer
 
-\* Security Camera System
+* Security Camera System
 
 
 
@@ -92,19 +92,19 @@ Your responsibilities include:
 
 
 
-\* Identifying proper network addressing
+* Identifying proper network addressing
 
-\* Configuring static IP addresses
+* Configuring static IP addresses
 
-\* Verifying subnet membership
+* Verifying subnet membership
 
-\* Troubleshooting incorrect subnet masks
+* Troubleshooting incorrect subnet masks
 
-\* Validating gateway configuration
+* Validating gateway configuration
 
-\* Performing root cause analysis
+* Performing root cause analysis
 
-\* Documenting findings
+* Documenting findings
 
 
 
@@ -112,11 +112,11 @@ Your responsibilities include:
 
 
 
-\## Knowledge Validation
+## Knowledge Validation
 
 
 
-\### Static vs Dynamic Addressing
+### Static vs Dynamic Addressing
 
 
 
@@ -128,33 +128,33 @@ A dynamic IP address is automatically assigned by a DHCP server and may change p
 
 
 
-\### Devices That Commonly Require Static Addresses
+### Devices That Commonly Require Static Addresses
 
 
 
-\* Domain Controllers
+* Domain Controllers
 
-\* DNS Servers
+* DNS Servers
 
-\* DHCP Servers
+* DHCP Servers
 
-\* File Servers
+* File Servers
 
-\* Printers
+* Printers
 
-\* Routers
+* Routers
 
-\* Firewalls
+* Firewalls
 
-\* Switches
+* Switches
 
-\* Access Points
+* Access Points
 
-\* Security Cameras
+* Security Cameras
 
 
 
-\### Why Test IP Connectivity Before Hostnames
+### Why Test IP Connectivity Before Hostnames
 
 
 
@@ -166,7 +166,7 @@ If the IP responds successfully, troubleshooting efforts can focus on DNS, appli
 
 
 
-\### Why Test Hostnames Second
+### Why Test Hostnames Second
 
 
 
@@ -178,13 +178,13 @@ Successful hostname resolution confirms:
 
 
 
-\* DNS server reachability
+* DNS server reachability
 
-\* DNS record availability
+* DNS record availability
 
-\* Proper DNS client configuration
+* Proper DNS client configuration
 
-\* Active Directory service discovery functionality
+* Active Directory service discovery functionality
 
 
 
@@ -192,11 +192,11 @@ Successful hostname resolution confirms:
 
 
 
-\## Subnetting Fundamentals
+## Subnetting Fundamentals
 
 
 
-\### Example Network
+### Example Network
 
 
 
@@ -208,7 +208,7 @@ IP Address:
 
 
 
-\### Network Information
+### Network Information
 
 
 
@@ -228,7 +228,7 @@ IP Address:
 
 
 
-\### Why This Matters
+### Why This Matters
 
 
 
@@ -244,39 +244,11 @@ Incorrect subnet masks can cause routing failures, connectivity issues, and inco
 
 
 
-\## Root Cause Analysis Planning
+## Root Cause Analysis Planning
 
 
 
-\### Incorrect Subnet Mask
-
-
-
-Potential Impact:
-
-
-
-\* Improper network boundary calculations
-
-\* Routing inconsistencies
-
-\* Intermittent connectivity issues
-
-
-
-Expected Resolution:
-
-
-
-\* Restore correct subnet mask
-
-\* Validate connectivity
-
-\* Document results
-
-
-
-\### Incorrect Default Gateway
+### Incorrect Subnet Mask
 
 
 
@@ -284,11 +256,11 @@ Potential Impact:
 
 
 
-\* Loss of communication outside local subnet
+* Improper network boundary calculations
 
-\* Internet access failures
+* Routing inconsistencies
 
-\* Inability to reach remote resources
+* Intermittent connectivity issues
 
 
 
@@ -296,11 +268,39 @@ Expected Resolution:
 
 
 
-\* Restore correct gateway configuration
+* Restore correct subnet mask
 
-\* Validate communication
+* Validate connectivity
 
-\* Document findings
+* Document results
+
+
+
+### Incorrect Default Gateway
+
+
+
+Potential Impact:
+
+
+
+* Loss of communication outside local subnet
+
+* Internet access failures
+
+* Inability to reach remote resources
+
+
+
+Expected Resolution:
+
+
+
+* Restore correct gateway configuration
+
+* Validate communication
+
+* Document findings
 
 
 
@@ -308,7 +308,7 @@ Expected Resolution:
 
 
 
-\## Screenshots
+## Screenshots
 
 
 
@@ -320,23 +320,21 @@ Screenshots will include:
 
 
 
-\* Initial DHCP configuration
+* Initial DHCP configuration
 
-\* Static IP assignment
+* Static IP assignment
 
-\* ipconfig validation
+* ipconfig validation
 
-\* Connectivity testing
+* Connectivity testing
 
-\* nslookup testing
+* nslookup testing
 
-\* Incorrect subnet mask simulation
+* Incorrect subnet mask simulation
 
-\* Incorrect gateway simulation
+* Incorrect gateway simulation
 
-\* Root cause analysis evidence
+* Root cause analysis evidence
 
-\* Final validation testing
-
-
+* Final validation testing
 
