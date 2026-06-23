@@ -190,11 +190,17 @@ This lab reinforced the importance of validating network configurations and usin
 
 ## Related Research
 
-- PrintNightmare (CVE-2021-1675)
+### Security Case Study
+
+- [PrintNightmare (CVE-2021-1675)](Research/PrintNightmare_CVE_2021_1675.md)
+
+### Related Topics
+
 - DNS Infrastructure Security
 - Active Directory Name Resolution
 - Enterprise Network Troubleshooting Methodologies
-
+- Windows Service Hardening
+- Network Segmentation
 ---
 
 ## Professional Skills Demonstrated
