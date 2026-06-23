@@ -214,45 +214,27 @@
 
 ## 
 
-## ### Root Cause Analysis
+### Root Cause Analysis
 
-## 
+| Section | Findings |
+|----------|----------|
+| Problem Observed | User reported loss of access to network resources |
+| Investigation Performed | Reviewed IP configuration, subnet mask, gateway, DNS settings, and tested connectivity using ping and nslookup |
+| Root Cause | Incorrect subnet mask and invalid gateway configuration caused network communication failures |
+| Corrective Action | Restored proper subnet mask, gateway, and DNS settings |
+| Validation | Verified functionality using ipconfig /all, ping 192.168.10.10, ping lab.local, and nslookup lab.local |
 
-## | Section | Findings |
+### Lessons Learned
 
-## |----------|----------|
-
-## | Problem Observed | User reported loss of access to network resources |
-
-## | Investigation Performed | Reviewed IP configuration, subnet mask, gateway, DNS settings, and tested connectivity using ping and nslookup |
-
-## | Root Cause | Incorrect subnet mask and invalid gateway configuration caused network communication failures |
-
-## | Corrective Action | Restored proper subnet mask, gateway, and DNS settings |
-
-## | Validation | Verified functionality using ipconfig /all, ping 192.168.10.10, ping lab.local, and nslookup lab.local |
-
-## 
-
-## ### Lessons Learned
-
-## 
-
+This lab reinforced the importance of ensuring that IP addressing, subnet masks, DNS settings, and gateway configurations align with the network design. Incorrect network settings can disrupt domain communication, prevent DNS resolution, and cause connectivity issues throughout an enterprise environment.
 ## This lab reinforced the importance of ensuring that IP addressing, subnet masks, DNS settings, and gateway configurations align with the network design. Incorrect network settings can disrupt domain communication, prevent DNS resolution, and cause connectivity issues throughout an enterprise environment.
 
 ## 
 
-## ### Remaining Tasks
+### Remaining Tasks
 
-## 
-
-## - Capture final screenshots
-
-## - Complete PrintNightmare case study
-
-## - Embed screenshots into README
-
-## - Remove screenshots/PLACEHOLDER.md
-
-## - Final validation and GitHub publication
+- [x] Capture final screenshots
+- [ ] Complete PrintNightmare case study
+- [x] Embed screenshots into README
+- [x] Remove screenshots/PLACEHOLDER.md
 
