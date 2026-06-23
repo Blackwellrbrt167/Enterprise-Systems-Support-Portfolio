@@ -27,8 +27,7 @@
 ## - Root cause analysis documentation
 
 
-
-## ### Lab Findings
+### Lab Findings
 
 
 
