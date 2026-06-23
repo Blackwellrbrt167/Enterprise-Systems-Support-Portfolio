@@ -1,298 +1,164 @@
-\# PrintNightmare (CVE-2021-1675)
+# PrintNightmare (CVE-2021-1675)
 
+## Overview
 
+PrintNightmare (CVE-2021-1675) was a critical Remote Code Execution (RCE) vulnerability affecting the Windows Print Spooler service.
 
-\## Overview
+The vulnerability allowed attackers to execute arbitrary code with SYSTEM-level privileges on vulnerable Windows systems. Because the Print Spooler service is enabled by default on many Windows servers and workstations, the vulnerability created significant risk across enterprise environments.
 
+PrintNightmare became one of the most widely discussed Windows vulnerabilities of 2021 due to its potential to compromise Domain Controllers, elevate privileges, and enable lateral movement throughout Active Directory environments.
 
+---
 
-PrintNightmare (CVE-2021-1675 and related vulnerabilities) was a critical Remote Code Execution (RCE) vulnerability affecting the Windows Print Spooler service.
+## Affected Component
 
+### Windows Print Spooler Service
 
-
-The vulnerability allowed attackers to execute arbitrary code with SYSTEM-level privileges on vulnerable Windows systems. Because the Print Spooler service is commonly enabled throughout enterprise environments, including Domain Controllers, the vulnerability represented a significant threat to organizational security.
-
-
-
-\---
-
-
-
-\## Affected Component
-
-
-
-\### Windows Print Spooler Service
-
-
-
-Service Name:
-
-
+Service:
 
 ```text
-
 spoolsv.exe
-
 ```
 
+The Print Spooler service is responsible for managing print jobs and printer driver installations on Windows systems.
 
+Because the service often operates with elevated privileges, successful exploitation could provide attackers with extensive control over an affected system.
 
-The Print Spooler service manages print jobs and printer driver installations on Windows systems.
+---
 
-
-
-Because the service often runs with elevated privileges, exploitation could provide attackers with extensive control over the affected system.
-
-
-
-\---
-
-
-
-\## Why the Vulnerability Was Critical
-
-
+## Why the Vulnerability Was Critical
 
 PrintNightmare was considered critical because successful exploitation could allow an attacker to:
 
+* Execute arbitrary code
+* Obtain SYSTEM-level privileges
+* Install malicious software
+* Create new user accounts
+* Modify existing accounts
+* Disable security controls
+* Move laterally throughout the network
+* Potentially compromise Active Directory
 
+In many environments, a compromised Print Spooler service could lead to complete domain compromise.
 
-\- Execute arbitrary code remotely
+---
 
-\- Obtain SYSTEM-level privileges
+## School District Impact Scenario
 
-\- Install malicious software
-
-\- Create new user accounts
-
-\- Modify existing accounts
-
-\- Move laterally throughout the environment
-
-\- Potentially compromise Active Directory
-
-
-
-The vulnerability required immediate remediation due to the potential for complete domain compromise.
-
-
-
-\---
-
-
-
-\## School District Impact Scenario
-
-
-
-As the sole IT Support Technician for a school district, a successful PrintNightmare attack could have severe consequences.
-
-
+As the sole IT Support Technician for a school district, a successful PrintNightmare attack could have significant operational and security consequences.
 
 Potential impacts include:
 
+* Compromise of student and staff accounts
+* Unauthorized access to Active Directory
+* Deployment of ransomware
+* Disruption of classroom technology
+* Loss of access to educational resources
+* Exposure of sensitive educational records
+* Long-term persistence within the environment
 
+Because school districts frequently rely on centralized Windows infrastructure, a compromised print service could provide attackers with a pathway to critical systems.
 
-\- Compromise of student and staff accounts
+---
 
-\- Unauthorized access to Active Directory
+## Microsoft Recommended Mitigation
 
-\- Deployment of ransomware
+### Primary Mitigation
 
-\- Loss of instructional technology services
+* Apply all applicable Microsoft security updates and patches.
 
-\- Interruption of classroom operations
+### Additional Hardening Measures
 
-\- Exposure of sensitive educational records
+* Disable the Print Spooler service on systems that do not require printing.
+* Restrict Point and Print functionality.
+* Limit printer driver installation privileges.
+* Restrict administrative access.
+* Verify secure printer deployment policies.
+* Review and harden Group Policy settings related to printer management.
 
-\- Long-term persistence within the environment
+---
 
+## Detection and Monitoring
 
-
-Because many school districts rely heavily on centralized Windows infrastructure, a compromised Print Spooler service could become an entry point into critical systems.
-
-
-
-\---
-
-
-
-\## Microsoft Recommended Mitigation
-
-
-
-Microsoft recommended several mitigation strategies:
-
-
-
-\### Primary Mitigation
-
-
-
-\- Apply all applicable Microsoft security updates.
-
-
-
-\### Additional Hardening Measures
-
-
-
-\- Disable the Print Spooler service on systems that do not require printing.
-
-\- Restrict Point and Print functionality.
-
-\- Limit printer driver installation privileges.
-
-\- Verify registry settings related to driver installation controls.
-
-\- Reduce unnecessary administrative access.
-
-
-
-\---
-
-
-
-\## Detection and Monitoring
-
-
-
-Indicators of suspicious activity may include:
-
-
-
-\### Event Log Monitoring
-
-
+### Event Log Monitoring
 
 Review Windows Event Logs for:
 
+* Unexpected printer driver installations
+* Print service errors
+* Administrative changes involving printer drivers
+* Unusual privilege escalation activity
 
-
-\- Unexpected printer driver installations
-
-\- Print service errors
-
-\- Administrative changes involving printer drivers
-
-
-
-\### Process Monitoring
-
-
+### Process Monitoring
 
 Monitor:
 
-
-
 ```text
-
 spoolsv.exe
-
 ```
-
-
 
 for:
 
+* Unexpected child processes
+* Suspicious DLL loading
+* Abnormal network communications
+* Unusual resource utilization
 
-
-\- Unusual child processes
-
-\- Unexpected DLL loading
-
-\- Suspicious network activity
-
-
-
-\### Endpoint Detection and Response (EDR)
-
-
+### Endpoint Detection and Response (EDR)
 
 Use EDR solutions to identify:
 
+* Privilege escalation attempts
+* Malicious code execution
+* Suspicious process behavior
+* Unauthorized driver installations
 
+---
 
-\- Privilege escalation attempts
-
-\- Malicious code execution
-
-\- Abnormal process behavior
-
-
-
-\---
-
-
-
-\## How Network Segmentation Reduces Risk
-
-
+## How Network Segmentation Reduces Risk
 
 Network segmentation can significantly reduce the impact of vulnerabilities such as PrintNightmare.
 
-
-
 Benefits include:
 
+* Limiting lateral movement
+* Restricting attacker access to critical systems
+* Isolating sensitive infrastructure
+* Reducing attack surface
+* Containing compromises to smaller network segments
 
+Even if a workstation or server is compromised, effective segmentation can help prevent attackers from reaching Domain Controllers and other high-value assets.
 
-\- Limiting lateral movement
+---
 
-\- Restricting attacker access to critical systems
-
-\- Isolating sensitive infrastructure
-
-\- Reducing attack surface
-
-\- Containing compromise to a smaller portion of the network
-
-
-
-Even if a system is compromised, proper segmentation can prevent attackers from easily reaching Domain Controllers and other critical assets.
-
-
-
-\---
-
-
-
-\## Why This Matters
-
-
+## Why This Matters
 
 PrintNightmare demonstrated how a commonly enabled Windows service could become a critical attack vector across enterprise environments.
 
-
-
 For Help Desk Technicians, Systems Administrators, and Security Professionals, understanding service exposure, patch management, monitoring, and network segmentation is essential to reducing organizational risk.
-
-
 
 This vulnerability reinforced the importance of maintaining secure configurations, applying security updates promptly, and continuously monitoring enterprise systems for signs of compromise.
 
+---
 
+## Key Takeaways
 
-\---
+* Critical services can become major attack vectors.
+* Patch management remains one of the most important security controls.
+* Domain Controllers should only run required services.
+* Network segmentation can significantly reduce risk.
+* Monitoring and logging are essential for early detection.
+* Defense-in-depth strategies help limit the impact of exploitation.
 
+---
 
+## Skills Demonstrated
 
-\## Skills Demonstrated
-
-
-
-\- Vulnerability Research
-
-\- Windows Infrastructure Security
-
-\- Active Directory Awareness
-
-\- Security Monitoring Concepts
-
-\- Network Segmentation Fundamentals
-
-\- Risk Analysis
-
-\- Technical Documentation
-
+* Vulnerability Research
+* Security Analysis
+* Windows Infrastructure Security
+* Active Directory Awareness
+* Network Segmentation Concepts
+* Risk Assessment
+* Enterprise Support Documentation
+* Technical Communication
