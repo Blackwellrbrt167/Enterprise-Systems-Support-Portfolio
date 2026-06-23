@@ -1,10 +1,10 @@
 
 
-## ## Current Lab Status
+## Current Lab Status
 
 
 
-## ### Status: Knowledge Phase Complete
+### Status: Knowledge Phase Complete
 
 
 
