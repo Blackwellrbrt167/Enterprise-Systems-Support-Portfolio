@@ -1,18 +1,16 @@
-## ---
 
-## 
 
 ## ## Current Lab Status
 
-## 
+
 
 ## ### Status: Knowledge Phase Complete
 
-## 
+
 
 ## The conceptual and troubleshooting portions of this lab have been completed, including:
 
-## 
+
 
 ## - Static IPv4 addressing
 
@@ -28,29 +26,29 @@
 
 ## - Root cause analysis documentation
 
-## 
+
 
 ## ### Lab Findings
 
-## 
+
 
 ## During testing, an intentionally incorrect subnet mask was applied to the client workstation.
 
-## 
+
 
 ## Configuration:
 
-## 
+ 
 
 ## - IP Address: 192.168.10.100
 
 ## - Incorrect Subnet Mask: 255.255.255.240
 
-## 
+ 
 
 ## Observed Results:
 
-## 
+ 
 
 ## - Hostname resolution failed
 
@@ -60,7 +58,7 @@
 
 ## - ping lab.local failed
 
-## 
+ 
 
 ## The incorrect subnet mask caused the workstation to calculate network boundaries incorrectly, preventing normal communication with DNS services.
 
@@ -212,7 +210,7 @@
 
 ![Final Validation 2](screenshots/12_Restored_Static_IP_Validation_2.png)
 
-## 
+
 
 ### Root Cause Analysis
 
@@ -229,7 +227,7 @@
 This lab reinforced the importance of ensuring that IP addressing, subnet masks, DNS settings, and gateway configurations align with the network design. Incorrect network settings can disrupt domain communication, prevent DNS resolution, and cause connectivity issues throughout an enterprise environment.
 ## This lab reinforced the importance of ensuring that IP addressing, subnet masks, DNS settings, and gateway configurations align with the network design. Incorrect network settings can disrupt domain communication, prevent DNS resolution, and cause connectivity issues throughout an enterprise environment.
 
-## 
+
 
 ### Remaining Tasks
 
